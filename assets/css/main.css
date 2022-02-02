@@ -1,0 +1,18 @@
+@import './fonts.css';
+
+/* 'Cerebri Sans' 'DMSans Regular' */
+
+/* Base Styles */
+
+body {
+  font-family: 'Cerebri Sans', 'DMSans Regular' !important;
+}
+
+.hero {
+  background-image: url('@/assets/images/home6.jpeg');
+  object-position: 50% 50%;
+  height: 450px;
+}
+.link:hover {
+    color: rgb(74 222 128);
+}

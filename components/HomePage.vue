@@ -3,11 +3,11 @@
   <header class="flex my-12 justify-between">
     <img src="@/assets/RightStayLogo/svg/bluegreen.svg" alt="" class="w-40">
     <div class="flex">
-      <a href="#" class="pr-4">Home Type</a>
-      <a href="#" class="pr-4">About Us</a>
-      <a href="#" class="pr-4">Contact</a>
-      <a href="#" class="pr-4">Blog</a>
-      <a href="#">Buy Property</a>
+      <a href="#" class="hover:text-green-400 pr-4 font-semibold">Home Type</a>
+      <a href="#" class="hover:text-green-400 pr-4 font-semibold">About Us</a>
+      <a href="#" class="hover:text-green-400 pr-4 font-semibold">Contact</a>
+      <a href="#" class="hover:text-green-400 pr-4 font-semibold">Blog</a>
+      <a href="#" class="hover:text-green-400 font-semibold">Buy Property</a>
     </div>
   </header>
   <div class="hero pl-16 pt-20 w-full bg-cover bg-no-repeat">
@@ -57,23 +57,8 @@
 </div>    
 </template>
 
-
-
-
-
 <script>
 export default {
   name: 'HomePage',
 }
 </script>
-
-
-
-
-<style scoped>
-.hero {
-  background-image: url('@/assets/images/home6.jpeg'); 
-  object-position:50% 50%;
-  height: 450px;
- }
-</style>

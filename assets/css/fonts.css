@@ -1,0 +1,113 @@
+/* DMSans Font */
+@font-face {
+    font-family: 'DMSans Bold';
+    src: url('../fonts/DM_Sans/DMSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans Bold Italic';
+    src: url('../fonts/DM_Sans/DMSans-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans Italic';
+    src: url('../fonts/DM_Sans/DMSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans Medium';
+    src: url('../fonts/DM_Sans/DMSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans MediumItalic';
+    src: url('../fonts/DM_Sans/DMSans-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans Regular';
+    src: url('../fonts/DM_Sans/DMSans-Regular.ttf');
+}
+
+
+/* Cerebri Sans Font */
+
+@font-face {
+  font-family: 'Cerebri Sans Light';
+  src: url('../fonts/cerebri-sans/CerebriSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Light Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans';
+  src: url('../fonts/cerebri-sans/CerebriSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Medium';
+  src: url('../fonts/cerebri-sans/CerebriSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Medium Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Semi Bold';
+  src: url('../fonts/cerebri-sans/CerebriSans-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Semi Bold Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Bold';
+  src: url('../fonts/cerebri-sans/CerebriSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Bold Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Extra Bold';
+  src: url('../fonts/cerebri-sans/CerebriSans-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Extra Bold Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-ExtraBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Book';
+  src: url('../fonts/cerebri-sans/CerebriSans-Book.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Book Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-BookItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Heavy';
+  src: url('../fonts/cerebri-sans/CerebriSans-Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'Cerebri Sans Heavy Italic';
+  src: url('../fonts/cerebri-sans/CerebriSans-HeavyItalic.ttf');
+}
