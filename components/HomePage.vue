@@ -18,15 +18,15 @@
     </div>
     <div class="bg-white w-2/5 h-20 p-4 flex justify-between">
       <form class="text-sm">
-        <label>Location</label>
+        <label class="block">Location</label>
         <input type="text" name="" value="London" class="text-green-400 w-14 border-none border-transparent">
       </form>
       <form class="text-sm">
-        <label>Type</label>
+        <label class="block">Type</label>
         <input type="text" name="" value="Duplex" class="text-green-400 w-14 border-none">
       </form>
       <form class="text-sm">
-        <label>Maximum Price</label>
+        <label class="block">Maximum Price</label>
         <input type="text" name="" value="$5000" class="text-green-400 w-14 order-none">
       </form>
       <div>
@@ -50,8 +50,31 @@
       <div class="">
         <img src="@/assets/images/home3.jpeg" alt="">
       </div>
+      <div class="">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
+      <div class="">
+        <img src="@/assets/images/home2.jpg" alt="">
+      </div>
+      <div class="">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
+      <div class="">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
+      <div class="">
+        <img src="@/assets/images/home2.jpg" alt="">
+      </div>
+      <div class="">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
     </div>
   </div>
+  <div class="text-center text-2xl my-12">
+  <a href="#" class="text-green-400 hover:text-red-400">View all Houses</a>
+    
+  </div>
+
 
   
 </div>    
