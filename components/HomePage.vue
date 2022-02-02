@@ -40,9 +40,28 @@
   </div>
   <div class="flex">
     <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
-    <div class="grid grid-cols-3 gap-7">
-      <div class="">
+    <div class="grid grid-cols-3 gap-12">
+      <div class="bg-slate-50">
         <img src="@/assets/images/home3.jpeg" alt="">
+        <p>$3000</p>
+        <div class="location flex">
+          <img src="@/assets/icons/location.svg" alt="" srcset="">
+          <p>Preston Rd, Birmingham</p>
+        </div>
+        <div class="details grid grid-cols-3">
+          <div>
+            <img src="@/assets/icons/location.svg" alt="">
+            <p>4 Bd.</p>
+          </div>
+          <div>
+            <img src="@/assets/icons/bath.svg" alt="">
+            <p>2 Ba.</p>
+          </div>
+          <div>
+            <img src="@/assets/icons/location.svg" alt="">
+            <p>890 sqft.</p>
+          </div>
+        </div>
       </div>
       <div class="">
         <img src="@/assets/images/home2.jpg" alt="">
@@ -74,7 +93,33 @@
   <a href="#" class="text-green-400 hover:text-red-400">View all Houses</a>
     
   </div>
-
+  <div>
+    <div class="grid grid-cols-4 gap-12 bg-green-500 text-white py-12 pl-16">
+      <div class="about-us">
+        <p>About Us</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, id temporibus? Voluptate neque dolore maiores ut modi dolorum libero assumenda accusantium ratione natus nulla tempora ex molestias, illum reiciendis incidunt?</p>
+        <p>fb</p>
+      </div>
+      <div class="get-in-touch">
+        <p>loc: 123 Street, Lagos, Nigeria</p>
+        <p>call: +234 12345678</p>
+        <p>mail: info@example.com</p>
+        <p>time: Mon - Fri, 9am - 5pm</p>
+      </div>
+      <div class="useful-link">
+        <p>Useful Link</p>
+        <div>
+          <div><a href="#">lorem</a></div>
+          <div><a href="#">lorem</a></div>
+          <div><a href="#">lorem</a></div>
+          <div><a href="#">lorem</a></div>
+        </div>
+      </div>
+      <div class="parent-company">
+        <a href="#">RightSource.com</a>
+      </div>
+    </div>
+  </div>
 
   
 </div>    
