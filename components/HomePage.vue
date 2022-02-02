@@ -10,38 +10,71 @@
       <a href="#">Buy Property</a>
     </div>
   </header>
-  <div class="hero pl-16 pt-20 ">
+  <div class="hero pl-16 pt-20 w-full bg-cover bg-no-repeat">
     <p class="text-3xl text-white w-56 mb-6">Find the perfect place to stay with your family</p>
     <div class="text-sm text-white mb-6">
       <p>Family is number one and comfort is number two.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     </div>
-    <div class="card w-96 h-16 p-2 flex justify-between">
+    <div class="bg-white w-2/5 h-20 p-4 flex justify-between">
+      <form class="text-sm">
+        <label>Location</label>
+        <input type="text" name="" value="London" class="text-green-400 w-14 border-none border-transparent">
+      </form>
+      <form class="text-sm">
+        <label>Type</label>
+        <input type="text" name="" value="Duplex" class="text-green-400 w-14 border-none">
+      </form>
+      <form class="text-sm">
+        <label>Maximum Price</label>
+        <input type="text" name="" value="$5000" class="text-green-400 w-14 order-none">
+      </form>
       <div>
-        <p>location</p>
-        <p class="text-green-400">London</p>
-      </div>
-      <div>
-        <p>Type</p>
-        <p class="text-green-400">Duplex</p>
-      </div>
-      <div>
-        <p>Maximum Price</p>
-        <p class="text-green-400">$5000</p>
-      </div>
-      <div>
-        <button class="w-20 h-10 bg-green-400 text-white">Search</button>
+        <button class="w-24 h-10 bg-green-400 text-white">Search</button>
       </div>
 
     </div>
   </div>
-  <div class="mt-16">
-      <p>We are all around Lagos</p>
+  <div class="mt-20 mb-4">
+    <p class="w-64 text-2xl">We are already all around Lagos.</p>
+  </div>
+  <div class="flex text-center mb-8 justify-end">
+    <div class="pr-2">
+      <button>
+        <img src="@/assets/icon/arrow-back.svg" alt="">
+      </button>
     </div>
+    <div class="pl-2">
+      <button>
+        <img src="@/assets/icon/arrow-forward.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <div class="flex">
+    <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
+    <div class="flex">
+      <div class="w-3/12 h-3/12 mr-4">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
+      <div class="w-3/12 h-3/12 mr-4">
+        <img src="@/assets/images/home2.jpg" alt="">
+      </div>
+      <div class="w-3/12 h-3/12 mr-4">
+        <img src="@/assets/images/home3.jpeg" alt="">
+      </div>
+      <div class="w-3/12 h-3/12">
+        <img src="@/assets/images/home5.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+
   
-</div>
-    
+</div>    
 </template>
+
+
+
+
 
 <script>
 export default {
@@ -49,15 +82,13 @@ export default {
 }
 </script>
 
+
+
+
 <style scoped>
 .hero {
-  background-image: url('@/assets/images/home1.jpg'); 
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-image: url('@/assets/images/home6.jpeg'); 
+  object-position:50% 50%;
   height: 450px;
- }
- .card {
-   background-color: white;
  }
 </style>
