@@ -35,35 +35,20 @@
 
     </div>
   </div>
-  <div class="mt-20 mb-4">
+  <div class="mt-20 mb-24">
     <p class="w-64 text-2xl">We are already all around Lagos.</p>
-  </div>
-  <div class="flex text-center mb-8 justify-end">
-    <div class="pr-2">
-      <button>
-        <img src="@/assets/icon/arrow-back.svg" alt="">
-      </button>
-    </div>
-    <div class="pl-2">
-      <button>
-        <img src="@/assets/icon/arrow-forward.svg" alt="">
-      </button>
-    </div>
   </div>
   <div class="flex">
     <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
-    <div class="flex">
-      <div class="w-3/12 h-3/12 mr-4">
+    <div class="grid grid-cols-3 gap-7">
+      <div class="">
         <img src="@/assets/images/home3.jpeg" alt="">
       </div>
-      <div class="w-3/12 h-3/12 mr-4">
+      <div class="">
         <img src="@/assets/images/home2.jpg" alt="">
       </div>
-      <div class="w-3/12 h-3/12 mr-4">
+      <div class="">
         <img src="@/assets/images/home3.jpeg" alt="">
-      </div>
-      <div class="w-3/12 h-3/12">
-        <img src="@/assets/images/home5.jpeg" alt="">
       </div>
     </div>
   </div>
