@@ -1,16 +1,14 @@
 <template>
-  <div class="px-24">
-    <header class="flex my-12 justify-between">
+  <div class="container">
+    <header class="flex items-center mt-8 mb-12 justify-between">
       <img src="@/assets/RightStayLogo/svg/bluegreen.svg" alt="" class="w-40" />
-      <div class="flex text-green-400">
-        <a href="#" class="hover:text-green-700 pr-4 font-semibold"
-          >Home Type</a
-        >
-        <a href="#" class="hover:text-green-700 pr-4 font-semibold">About Us</a>
-        <a href="#" class="hover:text-green-700 pr-4 font-semibold">Contact</a>
-        <a href="#" class="hover:text-green-700 pr-4 font-semibold">Blog</a>
-        <a href="#" class="hover:text-green-700 font-semibold">Buy Property</a>
-      </div>
+      <ul class="w-2/5 flex justify-between">
+        <li class="cursor-pointer">Home Type</li>
+        <li class="cursor-pointer">About Us</li>
+        <li class="cursor-pointer">Contact</li>
+        <li class="cursor-pointer">Blog</li>
+        <li class="cursor-pointer">Buy Property</li>
+      </ul>
     </header>
     <div class="hero pl-16 pt-20 w-full bg-cover bg-no-repeat">
       <p class="text-3xl text-white w-56 mb-6">
@@ -50,7 +48,7 @@
         </form>
         <div>
           <button
-            class="w-24 h-10 bg-green-600 hover:bg-green-700 text-white rounded"
+            class="w-24 h-10 bg-gradient-to-r from-green-200 to-green-300 text-white rounded"
           >
             Search
           </button>
@@ -146,11 +144,16 @@
 </template>
 
 <script>
-import { BedOutline, LocationSharp, SquareSharp } from 'vue-icon-packs/io'
-import { SBath } from 'vue-icon-packs/bx'
+// import { BedOutline, LocationSharp, SquareSharp } from 'vue-icon-packs/io'
+// import { SBath } from 'vue-icon-packs/bx'
 
 export default {
   name: 'HomePage',
-  components: { BedOutline, LocationSharp, SBath, SquareSharp },
+  // components: {
+  //   BedOutline,
+  //   LocationSharp,
+  //   SquareSharp,
+  //   SBath
+  // },
 }
 </script>

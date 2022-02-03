@@ -12,6 +12,10 @@ body {
 .hero {
   background-image: url('@/assets/images/girl.jpg');
   object-position: 50% 50%;
-  height: 450px;
+  height: 520px;
 }
 
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
