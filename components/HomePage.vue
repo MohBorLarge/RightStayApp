@@ -1,5 +1,6 @@
 <template>
   <div class="px-24">
+    <ArrowRight />
     <header class="flex my-12 justify-between">
       <img src="@/assets/RightStayLogo/svg/bluegreen.svg" alt="" class="w-40" />
       <div class="flex text-green-400">
@@ -58,21 +59,23 @@
     <div class="mt-20 mb-24">
       <p class="w-64 text-2xl">We are already all around Lagos.</p>
     </div>
-    <div class="text-center text-2xl my-12">
+    <div class="text-center text-2xl my-12 mx-auto">
       <a href="#" class="text-green-400 hover:text-red-600">View All Houses</a>
     </div>
     <div class="flex">
       <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
       <div class="grid grid-cols-3 gap-12 mb-12">
-        <div class="bg-white p-8 rounded-md">
+        <div class="bg-white p-4 rounded-lg">
           <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
+            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
           </div>
-          <div>
-            <p>$3000</p>
+          <div class="text-green-400 text-xl">
+            <p>$300,000</p>
           </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
+          <div class="location flex text-gray-200">
+            <div class="text-gray-200">
+              <img src="@/assets/icons/location.svg" alt="" srcset="" />
+            </div>
             <p>Preston Rd, Birmingham</p>
           </div>
           <div class="details grid grid-cols-3">
@@ -90,7 +93,7 @@
             </div>
           </div>
           <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
+            class="bg-green-400 hover:bg-red-600 text-white py-2 w-full mt-3 text-center rounded-md"
           >
             <button>View House</button>
           </div>
@@ -381,7 +384,10 @@
 </template>
 
 <script>
+import { ArrowRight } from 'vue-icon-packs/oc'
+
 export default {
   name: 'HomePage',
+  components: { ArrowRight, },
 }
 </script>
