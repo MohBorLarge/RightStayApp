@@ -5,7 +5,7 @@
 /* Base Styles */
 
 body {
-  font-family: 'Cerebri Sans', 'DMSans Regular' !important;
+  font-family:  'DMSans Regular', 'Cerebri Sans' !important;
   background-color: whitesmoke;
 }
 
@@ -14,3 +14,4 @@ body {
   object-position: 50% 50%;
   height: 450px;
 }
+

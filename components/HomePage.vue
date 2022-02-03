@@ -1,14 +1,15 @@
 <template>
   <div class="px-24">
-    <ArrowRight />
     <header class="flex my-12 justify-between">
       <img src="@/assets/RightStayLogo/svg/bluegreen.svg" alt="" class="w-40" />
       <div class="flex text-green-400">
-        <a href="#" class="hover:text-red-600 pr-4 font-semibold">Home Type</a>
-        <a href="#" class="hover:text-red-600 pr-4 font-semibold">About Us</a>
-        <a href="#" class="hover:text-red-600 pr-4 font-semibold">Contact</a>
-        <a href="#" class="hover:text-red-600 pr-4 font-semibold">Blog</a>
-        <a href="#" class="hover:text-red-600 font-semibold">Buy Property</a>
+        <a href="#" class="hover:text-green-700 pr-4 font-semibold"
+          >Home Type</a
+        >
+        <a href="#" class="hover:text-green-700 pr-4 font-semibold">About Us</a>
+        <a href="#" class="hover:text-green-700 pr-4 font-semibold">Contact</a>
+        <a href="#" class="hover:text-green-700 pr-4 font-semibold">Blog</a>
+        <a href="#" class="hover:text-green-700 font-semibold">Buy Property</a>
       </div>
     </header>
     <div class="hero pl-16 pt-20 w-full bg-cover bg-no-repeat">
@@ -49,7 +50,7 @@
         </form>
         <div>
           <button
-            class="w-24 h-10 bg-green-400 hover:bg-red-600 text-white rounded"
+            class="w-24 h-10 bg-green-600 hover:bg-green-700 text-white rounded"
           >
             Search
           </button>
@@ -60,288 +61,49 @@
       <p class="w-64 text-2xl">We are already all around Lagos.</p>
     </div>
     <div class="text-center text-2xl my-12 mx-auto">
-      <a href="#" class="text-green-400 hover:text-red-600">View All Houses</a>
+      <a href="#" class="text-green-400 hover:text-green-700"
+        >View All Houses</a
+      >
     </div>
     <div class="flex">
       <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
-      <div class="grid grid-cols-3 gap-12 mb-12">
-        <div class="bg-white p-4 rounded-lg">
+      <div class="grid grid-cols-3 gap-10 mb-12">
+        <div
+          v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+          :key="item"
+          class="bg-white p-4 rounded-lg"
+        >
           <div class="pb-6">
             <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
           </div>
-          <div class="text-green-400 text-xl">
-            <p>$300,000</p>
+          <div class="text-xl mb-2">
+            <p class="text-green-400">$300,000</p>
           </div>
-          <div class="location flex text-gray-200">
-            <div class="text-gray-200">
-              <img src="@/assets/icons/location.svg" alt="" srcset="" />
+          <div class="location flex text-gray-400">
+            <div>
+              <LocationSharp
+                class="text-gray-400 h-4"
+                style="margin: 3px 2px 0 0"
+              />
             </div>
             <p>Preston Rd, Birmingham</p>
           </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
+          <div class="details flex justify-between">
+            <div class="flex text-gray-400">
+              <BedOutline class="h-4" style="margin: 3px 3px 0 0" />
               <p>4 Bd.</p>
             </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
+            <div class="flex text-gray-400">
+              <SBath class="h-4" style="margin: 3px 3px 0 0" />
               <p>2 Ba.</p>
             </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
+            <div class="flex text-gray-400">
+              <SquareSharp class="h-4" style="margin: 3px 3px 0 0" />
               <p>890 sqft.</p>
             </div>
           </div>
           <div
-            class="bg-green-400 hover:bg-red-600 text-white py-2 w-full mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
-          >
-            <button>View House</button>
-          </div>
-        </div>
-        <div class="bg-white p-8 rounded-md">
-          <div class="pb-6">
-            <img src="@/assets/images/home3.jpeg" alt="" class="rounded-md" />
-          </div>
-          <div>
-            <p>$3000</p>
-          </div>
-          <div class="location flex">
-            <img src="@/assets/icons/location.svg" alt="" srcset="" />
-            <p>Preston Rd, Birmingham</p>
-          </div>
-          <div class="details grid grid-cols-3">
-            <div class="flex">
-              <img src="@/assets/icons/bed.svg" alt="" />
-              <p>4 Bd.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/bath.svg" alt="" />
-              <p>2 Ba.</p>
-            </div>
-            <div class="flex">
-              <img src="@/assets/icons/location.svg" alt="" />
-              <p>890 sqft.</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-400 hover:bg-red-600 m-auto text-white px-4 py-2 w-8/12 mt-3 text-center rounded-md"
+            class="bg-green-600 hover:bg-green-700 text-white py-2 w-full mt-4 text-center rounded-md"
           >
             <button>View House</button>
           </div>
@@ -384,10 +146,11 @@
 </template>
 
 <script>
-import { ArrowRight } from 'vue-icon-packs/oc'
+import { BedOutline, LocationSharp, SquareSharp } from 'vue-icon-packs/io'
+import { SBath } from 'vue-icon-packs/bx'
 
 export default {
   name: 'HomePage',
-  components: { ArrowRight, },
+  components: { BedOutline, LocationSharp, SBath, SquareSharp },
 }
 </script>
