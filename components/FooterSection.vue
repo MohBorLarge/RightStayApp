@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-black text-white py-28">
+    <div class="bg-gray-900 text-white py-28">
       <div class="container">
         <div class="text-6xl mb-8 font-bold">
           <p class="mb-4">Not only solve your problem</p>
