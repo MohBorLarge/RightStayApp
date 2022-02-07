@@ -1,20 +1,12 @@
 <template>
   <div>
-    <CityShow />
-    <HouseView />
+    <p>qwert</p>
   </div>
 </template>
 
 <script>
-import HouseView from '@/components/shared/HouseView.vue'
-import CityShow from '@/components/shared/CityShow.vue'
-
-
 export default {
-  name: 'HomePage',
-  components: {
-    HouseView, CityShow
-  },
+  name: 'ViewHouse',
   layout: 'DefaultLayout',
 }
 </script>
