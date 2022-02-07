@@ -3,7 +3,7 @@
     <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
     <div class="grid grid-cols-3 gap-10 mb-12">
       <div
-        v-for="item in [1, 2, 3, 4, 5, 6]"
+        v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
         :key="item"
         class="bg-white p-4 rounded-lg"
       >
