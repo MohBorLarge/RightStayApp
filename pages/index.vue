@@ -2,22 +2,21 @@
   <div>
     <HeroCard />
     <CityShow />
-    <HouseView />
+    <HouseView :no-of-rows="2" />
   </div>
 </template>
 
 <script>
 import HeroCard from '@/components/homepage/HeroCard.vue'
-import HouseView  from '@/components/shared/HouseView.vue'
-import CityShow  from '@/components/shared/CityShow.vue'
-
+import HouseView from '@/components/shared/HouseView.vue'
+import CityShow from '@/components/shared/CityShow.vue'
 
 export default {
   name: 'HomePage',
   components: {
     HeroCard,
     HouseView,
-    CityShow
+    CityShow,
   },
   layout: 'DefaultLayout',
 }
