@@ -56,6 +56,10 @@
 <script>
 export default {
   name: 'FooterSection',
-  data() {},
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>

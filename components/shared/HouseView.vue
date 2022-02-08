@@ -1,9 +1,11 @@
 <template>
   <div class="flex">
-    <p class="text-green-400 w-3/6 mt-8 mr-24 text-xl">Lagos State</p>
+    <p v-if="!fullScreen" class="text-green-400 w-3/6 mt-8 mr-24 text-xl">
+      Lagos State
+    </p>
     <div class="grid grid-cols-3 gap-10 mb-12">
       <div
-        v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
         :key="item"
         class="bg-white p-4 rounded-lg"
       >
@@ -46,23 +48,35 @@
   </div>
 </template>
 
-
 <script>
 // import { BedOutline, LocationSharp, SquareSharp } from 'vue-icon-packs/io'
 // import { SBath } from 'vue-icon-packs/bx'
 
 export default {
-    name: "HouseView",
-//     components: {
-//         BedOutline,
-//         LocationSharp,
-//         SquareSharp,
-//         SBath,
-//   },
-    data() {
-        return{
-
-        }
-    }
+  name: 'HouseView',
+  //     components: {
+  //         BedOutline,
+  //         LocationSharp,
+  //         SquareSharp,
+  //         SBath,
+  //   },
+  props: {
+    noOfRows: {
+      type: Number,
+      default: 0,
+      required: true,
+    },
+    noOfCols: {
+      type: Number,
+      default: 0,
+    },
+    fullScreen: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  data() {
+    return {}
+  },
 }
 </script>

@@ -18,5 +18,10 @@ export default {
   components: {
     HeaderBar, FooterSection
   },
+  data() {
+    return {
+      
+    }
+  }
 }
 </script>
