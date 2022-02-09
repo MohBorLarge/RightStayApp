@@ -10,7 +10,7 @@ import HouseView from '@/components/shared/HouseView.vue'
 import CityShow from '@/components/shared/CityShow.vue'
 
 export default {
-  name: 'AllHouse',
+  name: 'AllHouses',
   components: {
     HouseView,
     CityShow,

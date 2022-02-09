@@ -7,7 +7,7 @@
       v-if="showButton"
       class="w-36 h-12 bg-gradient-to-r from-green-200 to-green-300 text-white rounded mt-4"
     >
-      View All Houses
+      <nuxt-link to="/all-house">View All Houses</nuxt-link>
     </button>
   </div>
 </template>

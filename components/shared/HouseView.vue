@@ -38,28 +38,19 @@
             <p>890 sqft.</p>
           </div>
         </div>
-        <div
+        <button
           class="bg-green-600 hover:bg-green-700 text-white py-2 w-full mt-4 text-center rounded-md"
         >
-          <button>View House</button>
-        </div>
+          <nuxt-link to="/view-house">View Houses</nuxt-link>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import { BedOutline, LocationSharp, SquareSharp } from 'vue-icon-packs/io'
-// import { SBath } from 'vue-icon-packs/bx'
-
 export default {
   name: 'HouseView',
-  //     components: {
-  //         BedOutline,
-  //         LocationSharp,
-  //         SquareSharp,
-  //         SBath,
-  //   },
   props: {
     noOfRows: {
       type: Number,
