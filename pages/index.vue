@@ -2,7 +2,7 @@
   <div>
     <HeroCard />
     <CityShow />
-    <HouseView :no-of-rows="2" />
+    <HouseView :houses="houses" />
   </div>
 </template>
 
@@ -19,5 +19,10 @@ export default {
     CityShow,
   },
   layout: 'DefaultLayout',
+  data() {
+    return {
+      houses: [1, 2, 3, 4, 5, 6],
+    }
+  },
 }
 </script>
