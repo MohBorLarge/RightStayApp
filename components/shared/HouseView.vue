@@ -3,12 +3,8 @@
     <p v-if="!fullScreen" class="text-green-400 w-3/6 mt-8 mr-24 text-xl">
       Lagos State
     </p>
-    <div class="grid grid-cols-3 gap-10 mb-12">
-      <div
-        v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]"
-        :key="item"
-        class="bg-white p-4 rounded-lg"
-      >
+    <div class="grid gap-10 mb-12" :class="`grid-cols-${noOfCols}`">
+      <div v-for="item in houses" :key="item" class="bg-white p-4 rounded-lg">
         <div class="pb-6">
           <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
         </div>
@@ -38,11 +34,13 @@
             <p>890 sqft.</p>
           </div>
         </div>
-        <button
-          class="bg-green-600 hover:bg-green-700 text-white py-2 w-full mt-4 text-center rounded-md"
-        >
-          <nuxt-link to="/view-house">View Houses</nuxt-link>
-        </button>
+        <nuxt-link to="/single-house">
+          <button
+            class="bg-green-600 hover:bg-green-700 text-white py-2 w-full mt-4 text-center rounded-md"
+          >
+            View House
+          </button>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -52,22 +50,19 @@
 export default {
   name: 'HouseView',
   props: {
-    noOfRows: {
-      type: Number,
-      default: 0,
+    houses: {
+      type: Array,
+      default: () => [],
       required: true,
     },
     noOfCols: {
       type: Number,
-      default: 0,
+      default: 3,
     },
     fullScreen: {
       type: Boolean,
       default: false,
     },
-  },
-  data() {
-    return {}
   },
 }
 </script>

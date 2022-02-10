@@ -9,7 +9,7 @@
         <div class="flex mb-10">
           <div class="mr-6 w-full">
             <img
-              src="@/assets/images/home3.jpeg"
+              src="@/assets/images/newhome1.jpeg"
               alt=""
               srcset=""
               class="h-full rounded-md"
@@ -18,7 +18,7 @@
           <div class="w-3/12 grid grid-cols-1 gap-6">
             <div v-for="item in [1, 2, 3, 4]" :key="item" class="">
               <img
-                src="@/assets/images/home3.jpeg"
+                src="@/assets/images/newhome3.jpeg"
                 alt=""
                 srcset=""
                 class="rounded-md object-cover"
@@ -31,15 +31,15 @@
         >
           <div>
             <p @click="switchTab('1')">Description</p>
-            <hr v-show="hidden1">
+            <hr v-show="hidden1" />
           </div>
           <div>
             <p @click="switchTab('2')">Room and facilities</p>
-            <hr v-show="hidden2">
+            <hr v-show="hidden2" />
           </div>
           <div>
             <p @click="switchTab('3')">Testimonials</p>
-            <hr v-show="hidden3">
+            <hr v-show="hidden3" />
           </div>
         </div>
         <div class="mb-12">
@@ -115,10 +115,10 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'ViewHouse',
-  layout: 'DefaultLayout',
   data() {
     return {
       hidden1: true,
@@ -145,3 +145,5 @@ export default {
   },
 }
 </script>
+
+
