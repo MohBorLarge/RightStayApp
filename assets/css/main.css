@@ -21,8 +21,12 @@ body {
 }
 
 hr {
-  border: 1px solid rgb(74 222 128);
+  border: 1px solid;
   margin-top: 10px
+}
+.vl {
+  border-left: 2px solid rgb(74 222 128);
+  height: auto;
 }
 .footer {
   background-image: url('@/assets/images/footer.jpeg');

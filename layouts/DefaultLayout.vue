@@ -12,7 +12,6 @@
 import HeaderBar from '@/components/shared/HeaderBar.vue'
 import FooterSection from '@/components/shared/FooterSection.vue'
 
-
 export default {
   name: 'DefaultLayout',
   components: {

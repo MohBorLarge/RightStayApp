@@ -11,7 +11,7 @@
                 </p>
                 <p class="mb-4">+056 686 56 56 98</p>
                 <p>
-                  <a href="mailto@hello@finderland.com">hello@rightsource.com</a>
+                  <a href="mailto@hello@RightStay.com">hello@rightsource.com</a>
                 </p>
                 <div class="ps-social-links light">
                   <a href="#"><i class="lnir lnir-twitter-filled"></i></a
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="subscribe w-1/5">
+        <div class="subscribe w-2/5">
           <div class="ps-widget ps-widget--footer ps-widget--footer-subscribe">
             <div class="ps-widget__content">
               <form
@@ -62,18 +62,19 @@
                 action="index.html"
                 method="get"
               >
-                <div class="ps-form__top">
+                <div class="ps-form__top mb-8">
                   <p>
                     Be the first to get the latest news about market, promotions
                     and much more!
                   </p>
                 </div>
-                <div class="ps-form__content">
+                <div class="ps-form__content mb-7 rounded-md">
                   <div class="ps-form__icon"><i class="icon-envelope"></i></div>
                   <input
-                    class="form-control"
+                    class="form-control w-full text-black rounded-md"
                     type="text"
                     placeholder="Email Address"
+                    style="padding: 12px 20px;"
                   />
                   <button><i class="icon-arrow-right"></i></button>
                 </div>
@@ -89,8 +90,9 @@
         </div>
       </div>
       <div class="ps-footer__bottom">
-        <div class="ps-footer__copyright">
-          <p>© 2021 <strong>Finderland</strong>. All right reserved</p>
+      <hr class="mt-24 text-gray-400">
+        <div class="ps-footer__copyright text-center mt-12">
+          <p>© 2021 <strong class="font-black">RightStay</strong>. All right reserved</p>
         </div>
       </div>
     </div>

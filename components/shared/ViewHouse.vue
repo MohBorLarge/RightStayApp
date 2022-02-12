@@ -30,16 +30,16 @@
           class="flex justify-between mr-96 cursor-pointer mb-8 text-xl font-semibold"
         >
           <div>
-            <p @click="switchTab('1')">Description</p>
-            <hr v-show="hidden1" />
+            <p class="ease" @click="switchTab('1')">Description</p>
+            <hr v-show="hidden1" class="text-green-400" />
           </div>
           <div>
-            <p @click="switchTab('2')">Room and facilities</p>
-            <hr v-show="hidden2" />
+            <p class="ease" @click="switchTab('2')">Room and facilities</p>
+            <hr v-show="hidden2" class="text-green-400" />
           </div>
           <div>
-            <p @click="switchTab('3')">Testimonials</p>
-            <hr v-show="hidden3" />
+            <p class="ease" @click="switchTab('3')">Testimonials</p>
+            <hr v-show="hidden3" class="text-green-400" />
           </div>
         </div>
         <div class="mb-12">

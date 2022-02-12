@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="ps-section__intro flex w-full pb-24 my-24 r">
+    <div class="ps-section__intro flex w-full py-24 my-24">
       <div class="ps-section__content w-full flex">
         <div class="ps-section__mission w-1/2 text-5xl leading-16">
           <p>
@@ -8,9 +8,9 @@
             favor.
           </p>
         </div>
-        <div class="ps-section__desc w-1/2 text-xl  text-gray-400">
+        <div class="ps-section__desc w-1/2 text-xl text-gray-400">
           <p class="mb-8">
-            Finderland is one of the world's leading property agents. Our
+            RightStay is one of the world's leading property agents. Our
             experience spans the globe.
           </p>
           <p class="">
@@ -21,9 +21,9 @@
         </div>
       </div>
     </div>
-    <hr>
-    <div class="ps-section__wrapper grid grid-cols-3 flex mb-24 pt-24">
-      <div class="flex ">
+    <hr />
+    <div class="ps-section__wrapper flex py-24">
+      <div class="flex w-2/4">
         <div class="text-6xl mr-6">
           <h3>$15.4M</h3>
         </div>
@@ -34,7 +34,7 @@
           </p>
         </div>
       </div>
-      <div class="flex ">
+      <div class="flex w-1/3">
         <div class="text-6xl mr-6">
           <h3>25K+</h3>
         </div>
@@ -45,7 +45,7 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-between">
+      <div class="flex w-1/3">
         <div class="text-6xl mr-6">
           <h3>500</h3>
         </div>
@@ -59,11 +59,8 @@
 
 <script>
 export default {
-  name: 'MissionSection',
-  data() {
-    return {
-      
-    }
-  },
+    name: 'MissionStats'
 }
 </script>
+
+<style lang="scss" scoped></style>
