@@ -1,9 +1,11 @@
 <template>
   <div>
-    <HeroCard />
-    <AboutUs />
+    <hero-card
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+    />
+    <about-us />
     <hr />
-    <MissionStats />
+    <mission-stats />
   </div>
 </template>
 

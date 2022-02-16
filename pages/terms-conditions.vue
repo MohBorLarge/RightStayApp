@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TermsConditions />
+    <terms-conditions />
   </div>
 </template>
 

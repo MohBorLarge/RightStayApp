@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="container">
-      <HeaderBar />
+      <header-bar />
       <nuxt />
     </div>
-    <FooterSection />
+    <footer-section />
   </div>
 </template>
 

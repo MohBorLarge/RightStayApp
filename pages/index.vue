@@ -1,9 +1,9 @@
 <template>
   <div>
-    <HeroCard />
-    <HouseView :houses="houses" />
+    <hero-card text="Find the perfect place to stay with your family in several locations" />
+    <house-view :houses="houses" />
     <hr />
-    <ReviewSection />
+    <review-section />
   </div>
 </template>
 

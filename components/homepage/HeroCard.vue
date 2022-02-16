@@ -4,7 +4,7 @@
       <div class="hero-overlay rounded-lg">
         <div class="text-6xl text-white font-bold w-5/6 p-28">
           <p style="letter-spacing: 1px">
-            Find the perfect place to stay with your family in several locations
+            {{ text }}
           </p>
         </div>
       </div>
@@ -51,5 +51,12 @@
 <script>
 export default {
   name: 'HeroCard',
+  props: {
+    text: {
+      type: String,
+      default: '',
+      required: true,
+    },
+  },
 }
 </script>

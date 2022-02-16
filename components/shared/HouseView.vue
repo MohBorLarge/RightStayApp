@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24">
+  <div class="py-20">
     <div class="pb-20 text-center">
       <p class="text-3xl font-bold mb-6">
         Select from our most popular locations

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <MissionStats />
+    <house-view :houses="houses" />
     <hr />
-    <HouseView :houses="houses" />
+    <mission-stats />
   </div>
 </template>
 
