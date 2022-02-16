@@ -1,10 +1,14 @@
 <template>
   <div>
-    <div class="hero pl-16 py-28 w-full bg-cover bg-no-repeat">
-      <div class="text-6xl text-white mb-14 w-6/12 font-bold">
-        <p style="letter-spacing: 1px">Find the perfect place to stay with your family</p>
+    <div class="hero bg-cover rounded-lg">
+      <div class="hero-overlay rounded-lg">
+        <div class="text-6xl text-white font-bold w-5/6 p-28">
+          <p style="letter-spacing: 1px">
+            Find the perfect place to stay with your family in several locations
+          </p>
+        </div>
       </div>
-      <div class="bg-white w-3/5 h-20 p-4 flex justify-between">
+      <!-- <div class="bg-white w-3/5 h-20 p-4 flex justify-between">
         <form class="text-sm">
           <label class="block">Location</label>
           <input
@@ -39,18 +43,13 @@
             Search
           </button>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "HeroCard",
-    data() {
-        return{
-
-        }
-    }
+  name: 'HeroCard',
 }
 </script>

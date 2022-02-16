@@ -1,19 +1,20 @@
 <template>
   <div>
-    <CityShow :show-button="false" />
-    <HouseView :houses="houses" :full-screen="true" />
+    <MissionStats />
+    <hr />
+    <HouseView :houses="houses" />
   </div>
 </template>
 
 <script>
 import HouseView from '@/components/shared/HouseView.vue'
-import CityShow from '@/components/shared/CityShow.vue'
+import MissionStats from '@/components/shared/MissionStats.vue'
 
 export default {
   name: 'AllHouses',
   components: {
     HouseView,
-    CityShow,
+    MissionStats,
   },
   layout: 'DefaultLayout',
   data() {

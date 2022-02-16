@@ -1,18 +1,38 @@
-@import './fonts.css';
+/* @import './fonts.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 
 /* 'Cerebri Sans' 'DMSans Regular' */
 
 /* Base Styles */
 
 body {
-  font-family:  'DMSans Regular', 'Cerebri Sans' !important;
+  font-family: 'Work Sans' !important;
   background-color: whitesmoke;
 }
 
 .hero {
   background-image: url('@/assets/images/newhome4.jpeg');
-  object-position: 50% 50%;
-  height: 600px;
+  background-attachment: fixed;
+  height: 450px;
+}
+
+.hero .hero-overlay {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(6, 88, 76, 0.9),
+    rgba(255, 0, 0, 0)
+  );
+  height: 450px;
+}
+
+.filter-card {
+  background-image: linear-gradient(to right, #38f4ac, #27dec4);
+}
+
+.base-button {
+  background-image: linear-gradient(to right, #38f4ac, #27dec4);
+  font-size: 14px;
 }
 
 .container {
@@ -21,15 +41,18 @@ body {
 }
 
 hr {
-  border: 1px solid;
-  margin-top: 10px
+  border-top: 1px solid;
 }
+
 .vl {
-  border-left: 2px solid rgb(74 222 128);
+  border-left: 1px solid;
   height: auto;
 }
+
 .footer {
   background-image: url('@/assets/images/footer.jpeg');
-
 }
 
+.color-green {
+  color: #38f4ac;
+}

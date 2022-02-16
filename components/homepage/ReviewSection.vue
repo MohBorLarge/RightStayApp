@@ -1,38 +1,35 @@
 <template>
-  <div class="container">
-    
-    <div class="ps-section__wrapper w-full flex py-24">
-      <div class="ps-section__left w-1/2">
-        <div class="ps-block--testimonial text-right">
-          <div class="ps-block__content">
-            <p class="mb-16 text-3xl">
-              “As a buyer in a busy market where everyone is a real estate
-              agent, I seek transparency in true numbers &amp; RightStay is my
-              first and only choice. Searches for multiplexes, property
-              comparisons, and the loan estimator. Works great.”
-            </p>
-          </div>
-          <div class="ps-block__bottom text-xl">
+  <div class="py-24">
+    <div class="text-center">
+      <p class="text-3xl font-bold">Testimonials</p>
+    </div>
+
+    <div class="flex py-20">
+      <div class="w-1/2">
+        <div class="text-right">
+          <p class="mb-16 text-2xl font-light">
+            “As a buyer in a busy market where everyone is a real estate agent,
+            I seek transparency in true numbers &amp; RightStay is my first and
+            only choice. Searches for multiplexes, property comparisons, and the
+            loan estimator. Works great.”
+          </p>
+          <div class="text-xl font-bold">
             <p>Thiago Alcatara</p>
-            <p><span>Chicago, FL</span></p>
+            <p>Chicago, FL</p>
           </div>
         </div>
       </div>
       <div class="vl mx-16"></div>
-      <div class="ps-section__right w-1/2">
-        <div class="ps-block--testimonial">
-          <div class="ps-block__content">
-            <p  class="mb-16 text-3xl">
-              “As a buyer in a busy market where everyone is a real estate
-              agent, I seek transparency in true numbers &amp; RightStay is my
-              first and only choice. Searches for multiplexes, property
-              comparisons, and the loan estimator. Works great.”
-            </p>
-          </div>
-          <div class="ps-block__bottom text-xl">
-            <p>Thiago Alcatara</p>
-            <p><span>Chicago, FL</span></p>
-          </div>
+      <div class="w-1/2">
+        <p class="mb-16 text-2xl font-light">
+          “As a buyer in a busy market where everyone is a real estate agent, I
+          seek transparency in true numbers &amp; RightStay is my first and only
+          choice. Searches for multiplexes, property comparisons, and the loan
+          estimator. Works great.”
+        </p>
+        <div class="text-xl font-bold">
+          <p>Thiago Alcatara</p>
+          <p>Chicago, FL</p>
         </div>
       </div>
     </div>
@@ -42,8 +39,5 @@
 <script>
 export default {
   name: 'ReviewSection',
-  data() {
-    return {}
-  },
 }
 </script>
