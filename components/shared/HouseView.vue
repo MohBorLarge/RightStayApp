@@ -22,20 +22,20 @@
         </div>
         <p class="text-xl font-bold">3 Bedroom Semi-Detached Duplex</p>
         <div class="flex mt-4 mb-2">
-          <unicon name="location-arrow" fill="limegreen" icon-style="line" class="mr-2" />
+          <!-- <unicon name="location-arrow" fill="limegreen" icon-style="line" class="mr-2" /> -->
           <p>Preston Rd, Birmingham, Lekki, Lagos</p>
         </div>
         <div class="flex justify-between">
           <div class="flex">
-            <unicon name="bed" class="mr-2"></unicon>
+            <!-- <unicon name="bed" class="mr-2"></unicon> -->
             <p>4 Beds</p>
           </div>
           <div class="flex">
-            <unicon name="bath" fill="limegreen" class="mr-2"></unicon>
+            <!-- <unicon name="bath" fill="limegreen" class="mr-2"></unicon> -->
             <p>2 Baths</p>
           </div>
           <div class="flex">
-            <unicon name="check-square" fill="limegreen" class="mr-2"></unicon>
+            <!-- <unicon name="check-square" fill="limegreen" class="mr-2"></unicon> -->
             <p>890 sqft</p>
           </div>
         </div>

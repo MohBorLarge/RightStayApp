@@ -1,6 +1,8 @@
 <template>
   <div>
-    <hero-card text="Find the perfect place to stay with your family in several locations" />
+    <hero-card
+      text="Find the perfect place to stay with your family in several locations"
+    />
     <house-view :houses="houses" />
     <hr />
     <review-section />
@@ -12,6 +14,8 @@ import HeroCard from '@/components/homepage/HeroCard.vue'
 import HouseView from '@/components/shared/HouseView.vue'
 import ReviewSection from '~/components/homepage/ReviewSection.vue'
 
+import client from '~/plugins/contentful'
+
 export default {
   name: 'HomePage',
   components: {
@@ -22,8 +26,17 @@ export default {
   layout: 'DefaultLayout',
   data() {
     return {
-      houses: [1, 2, 3, 4, 5, 6],
+      houses: [],
     }
+  },
+  async created() {
+    const response = await client.getEntries({
+      content_type: 'houseTitle',
+    })
+    this.houses = response.items
+      .slice()
+      .reverse()
+      .map((item) => console.log('checking here', item))
   },
 }
 </script>
