@@ -1,8 +1,8 @@
 <template>
   <div class="pb-24">
     <div class="mb-12">
-      <p class="text-5xl font-bold">Lekki Gardens</p>
-      <p>Preston Rd, Birmingham, Lekki, Lagos</p>
+      <p class="text-5xl font-bold">{{ currentHouse.houseTitle }}</p>
+      <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
     </div>
     <div class="flex w-full">
       <div class="images w-full mr-10">
@@ -33,27 +33,73 @@
       <div>
         <p class="text-4xl font-bold mb-8">Facilities</p>
         <div class="flex justify-between w-8/12 mb-6">
-          <p>3 bed</p>
-          <p>4 bath</p>
-          <p>55 sqr feet</p>
+          <p>
+            <span
+              ><hard-drive-icon
+                size="1.5x"
+                class="custom-class mr-2"
+              ></hard-drive-icon
+            ></span>
+            {{ currentHouse.noOfBedrooms }}
+            bed(s)
+          </p>
+          <p>
+            <span
+              ><hard-drive-icon
+                size="1.5x"
+                class="custom-class mr-2"
+              ></hard-drive-icon></span
+            >{{ currentHouse.noOfBathrooms }} bath(s)
+          </p>
+          <p>
+            <span
+              ><square-icon
+                size="1.3x"
+                class="custom-class mr-2"
+              ></square-icon></span
+            >{{ currentHouse.squareFeet }} sqr feet
+          </p>
         </div>
-        <div class="grid grid-cols-3 gap-2">
-          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
-          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Kitchen</p>
-          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
-          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
-          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
+        <div class="grid grid-cols-3 gap-2 mb-8">
+          <p
+            v-for="(item, index) in currentHouse.houseFeatures"
+            :key="index"
+            class="bg-gray-200 rounded-lg px-2 py-1 w-full"
+          >
+            {{ item }}
+          </p>
+        </div>
+
+        <div class="flex justify-between font-bold text-3xl">
+          <p>Price per day</p>
+          <p>₦{{ currentHouse.price }}</p>
         </div>
         <div>
-          <div class="flex justify-between font-bold text-3xl mb-4">
-            <p class="">Total</p>
-            <p>$4510</p>
-          </div>
-          <div
-            class="bg-green-400 p-3 text-center rounded-md text-3xl text-white cursor-pointer"
+          <form
+            action="https://formsubmit.co/info@rightstay.ng"
+            method="POST"
+            class="grid grid-cols-1 gap-4 my-12"
           >
-            Rent Now
-          </div>
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" placeholder="John" />
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" placeholder="Doe" />
+            <label for="lname">Number of Days:</label>
+            <input type="text" name="noOfDays" placeholder="4 Days" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="johndoe@mail.com" />
+            <label for="birthday">From:</label>
+            <input type="date" name="fromDate" />
+            <label for="birthday">To:</label>
+            <input type="date" name="toDate" />
+
+            <button
+              class="bg-green-400 p-3 text-center rounded-md text-3xl text-white cursor-pointer"
+              type="submit"
+            >
+              Book Now
+            </button>
+          </form>
         </div>
       </div>
 
@@ -66,18 +112,13 @@
             <hr class="text-green-400 mt-2" style="border-top: 2px solid" />
           </div>
         </div>
-        <div class="mb-12">
-          <p>
-            We may be biased but Lekki Gardens Apartment is one of the coolest
-            place around. The apartment covers 65m and comes with a separate
-            apartment for any extended guests to enjoy their privacy. There is a
-            master bedroom with its own terrace, two double bedrooms and a
-            wellness space comprising a Jacuzzi, hammam,sauna and pool <br />
-            Arrive through the front or through the side gate, which spectuarly
-            opens to a garrage -- but dont be mistaken, this is no normal
-            garrage. This magnificent museum-like room can fit up to one car.
-            Together this property is equally as perfect for group getaways as
-            it is for corporate events such as product launches
+        <div v-if="currentHouse.description" class="mb-12">
+          <p
+            v-for="(item, index) in currentHouse.description.content"
+            :key="index"
+            class="mb-6"
+          >
+            {{ item.content[0].value }}
           </p>
         </div>
       </div>
@@ -86,7 +127,27 @@
 </template>
 
 <script>
+import { HardDriveIcon, SquareIcon } from 'vue-feather-icons'
+
 export default {
   name: 'ViewHouse',
+  components: {
+    HardDriveIcon,
+    SquareIcon,
+  },
+  props: {
+    currentHouse: {
+      type: Object,
+      default: () => {},
+      required: true,
+    },
+  },
 }
 </script>
+
+<style scoped>
+form input {
+  height: 40px;
+  padding-left: 10px;
+}
+</style>

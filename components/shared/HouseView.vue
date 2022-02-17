@@ -53,10 +53,11 @@
           </div>
         </div>
         <div class="flex justify-between items-center mt-8">
-          <p class="w-1/2 text-green-500 text-2xl">$300,000</p>
+          <p class="w-1/2 text-green-500 text-2xl">₦{{ item.price }}</p>
           <BaseButton
             title="View House"
             :link="`/single-house/${item.houseId}`"
+            class="mt-6"
           />
         </div>
       </div>

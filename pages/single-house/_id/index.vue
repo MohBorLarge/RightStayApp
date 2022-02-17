@@ -1,6 +1,6 @@
 <template>
   <div>
-    <view-house />
+    <view-house :current-house="currentHouse" />
     <hr />
     <mission-stats />
   </div>
@@ -16,7 +16,9 @@ export default {
     MissionStats,
     ViewHouse,
   },
+
   layout: 'DefaultLayout',
+
   data() {
     return {
       houses: [],
