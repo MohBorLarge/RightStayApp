@@ -91,11 +91,11 @@
             <label for="phoneNumber">Phone Number:</label>
             <input type="number" name="phoneNumber" placeholder="080 1234 567" />
             <div class="flex justify-between">
-              <div>
+              <div class="grid grid-cols-1 gap-2">
                 <label for="noOfAdults">Adults:</label>
                 <input type="number" name="noOfAdults" placeholder="2" />
               </div>
-              <div>
+              <div class="grid grid-cols-1 gap-2">
                 <label for="noOfKids">Children:</label>
                 <input type="number" name="noOfKids" placeholder="2" />
               </div>
