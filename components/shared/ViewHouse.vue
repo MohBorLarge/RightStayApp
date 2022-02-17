@@ -88,9 +88,21 @@
             <input type="text" name="noOfDays" placeholder="4 Days" />
             <label for="email">Email:</label>
             <input type="email" name="email" placeholder="johndoe@mail.com" />
-            <label for="birthday">From:</label>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" name="phoneNumber" placeholder="080 1234 567" />
+            <div class="flex justify-between">
+              <div>
+                <label for="noOfAdults">Adults:</label>
+                <input type="number" name="noOfAdults" placeholder="2" />
+              </div>
+              <div>
+                <label for="noOfKids">Children:</label>
+                <input type="number" name="noOfKids" placeholder="2" />
+              </div>
+            </div>
+            <label>From:</label>
             <input type="date" name="fromDate" />
-            <label for="birthday">To:</label>
+            <label>To:</label>
             <input type="date" name="toDate" />
 
             <button
