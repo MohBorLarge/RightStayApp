@@ -13,18 +13,38 @@
         </div>
         <div class="w-1/4 text-xl">
           <ul>
-            <li><nuxt-link to="/all-houses">Short Lets</nuxt-link></li>
-            <li><nuxt-link to="/about-rightstay">About RightStay</nuxt-link></li>
-            <li><nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link></li>
-            <li><nuxt-link to="terms-conditions">Term &amp; Conditions</nuxt-link></li>
-            <li><a href="shop.html">Rightsource Website</a></li>
+            <li>
+              <nuxt-link to="/all-houses">Short Lets</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/about-rightstay">About RightStay</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="terms-conditions">Term &amp; Conditions</nuxt-link>
+            </li>
+            <li>
+              <a href="https://rightsourceng.com/">Rightsource Website</a>
+            </li>
           </ul>
         </div>
         <div class="w-1/4 text-xl">
           <ul>
-            <li><a href="about-us.html">Twitter</a></li>
-            <li><a href="contact-us.html">Facebook</a></li>
-            <li><a href="careers.html">Instagram</a></li>
+            <li class="flex items-center">
+              <twitter-icon size="1x" class="custom-class mr-4"></twitter-icon>
+              <a href="about-us.html">Twitter</a>
+            </li>
+            <li class="flex items-center">
+              <facebook-icon size="1x" class="custom-class mr-4"></facebook-icon>
+              <a href="about-us.html">Facebook</a>
+            </li>
+            <li></li>
+            <li class="flex items-center">
+              <instagram-icon size="1x" class="custom-class mr-4"></instagram-icon>
+              <a href="about-us.html">Instagram</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -40,8 +60,11 @@
 </template>
 
 <script>
+import { TwitterIcon, FacebookIcon, InstagramIcon } from 'vue-feather-icons'
+
 export default {
   name: 'FooterSection',
+  components: { TwitterIcon, FacebookIcon, InstagramIcon },
   data() {
     return {}
   },

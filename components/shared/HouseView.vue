@@ -16,45 +16,69 @@
     </div>
 
     <div class="grid gap-10 mb-12" :class="`grid-cols-${noOfCols}`">
-      <div v-for="item in houses" :key="item" class="bg-white p-4 rounded-lg">
+      <div
+        v-for="(item, index) in houses"
+        :key="index"
+        class="bg-white p-4 rounded-lg"
+      >
         <div class="pb-6">
           <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
         </div>
-        <p class="text-xl font-bold">3 Bedroom Semi-Detached Duplex</p>
+        <p class="text-xl font-bold">{{ item.houseTitle }}</p>
         <div class="flex mt-4 mb-2">
-          <!-- <unicon name="location-arrow" fill="limegreen" icon-style="line" class="mr-2" /> -->
-          <p>Preston Rd, Birmingham, Lekki, Lagos</p>
+          <navigation-2-icon
+            size="1.2x"
+            class="custom-class"
+          ></navigation-2-icon>
+          <p>{{ item.houseAddress }}, {{ item.state }}</p>
         </div>
         <div class="flex justify-between">
           <div class="flex">
-            <!-- <unicon name="bed" class="mr-2"></unicon> -->
-            <p>4 Beds</p>
+            <hard-drive-icon
+              size="1.5x"
+              class="custom-class mr-2"
+            ></hard-drive-icon>
+            <p>{{ item.noOfBedrooms }} Beds</p>
           </div>
           <div class="flex">
-            <!-- <unicon name="bath" fill="limegreen" class="mr-2"></unicon> -->
-            <p>2 Baths</p>
+            <hard-drive-icon
+              size="1.5x"
+              class="custom-class mr-2"
+            ></hard-drive-icon>
+            <p>{{ item.noOfBathrooms }} Baths</p>
           </div>
           <div class="flex">
-            <!-- <unicon name="check-square" fill="limegreen" class="mr-2"></unicon> -->
-            <p>890 sqft</p>
+            <square-icon size="1.3x" class="custom-class mr-2"></square-icon>
+            <p>{{ item.squareFeet }} Sqft.</p>
           </div>
         </div>
         <div class="flex justify-between items-center mt-8">
           <p class="w-1/2 text-green-500 text-2xl">$300,000</p>
-          <BaseButton title="View House" />
+          <BaseButton
+            title="View House"
+            :link="`/single-house/${item.houseId}`"
+          />
         </div>
       </div>
+    </div>
+
+    <div v-if="showViewAllBtn" class="text-center w-full my-8">
+      <BaseButton title="View all houses" link="/all-houses" />
     </div>
   </div>
 </template>
 
 <script>
+import { HardDriveIcon, Navigation2Icon, SquareIcon } from 'vue-feather-icons'
 import BaseButton from '@/components/base/BaseButton.vue'
 
 export default {
   name: 'HouseView',
   components: {
     BaseButton,
+    HardDriveIcon,
+    Navigation2Icon,
+    SquareIcon,
   },
   props: {
     houses: {
@@ -65,6 +89,10 @@ export default {
     noOfCols: {
       type: Number,
       default: 3,
+    },
+    showViewAllBtn: {
+      type: Boolean,
+      default: true,
     },
   },
   data() {

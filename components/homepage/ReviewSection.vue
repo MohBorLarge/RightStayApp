@@ -14,8 +14,8 @@
             loan estimator. Works great.”
           </p>
           <div class="text-xl font-bold">
-            <p>Thiago Alcatara</p>
-            <p>Chicago, FL</p>
+            <p>David Silva</p>
+            <p>Lekki, Lagos</p>
           </div>
         </div>
       </div>
@@ -28,8 +28,8 @@
           estimator. Works great.”
         </p>
         <div class="text-xl font-bold">
-          <p>Thiago Alcatara</p>
-          <p>Chicago, FL</p>
+          <p>Kevin De Bruyne</p>
+          <p>Ikeja, Lagos</p>
         </div>
       </div>
     </div>

@@ -1,16 +1,16 @@
 <template>
   <div>
-    <terms-conditions />
+    <terms-conditions-1 />
   </div>
 </template>
 
 <script>
-import TermsConditions from '@/components/shared/TermsConditions.vue'
+import TermsConditions1 from '@/components/shared/TermsConditions.vue'
 
 export default {
   name: 'TermsConditions',
   components: {
-    TermsConditions,
+    TermsConditions1,
   },
   layout: 'DefaultLayout',
 }

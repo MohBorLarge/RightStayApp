@@ -1,16 +1,16 @@
 <template>
   <div>
-    <privacy-policy />
+    <privacy-policy-1 />
   </div>
 </template>
 
 <script>
-import PrivacyPolicy from '@/components/shared/PrivacyPolicy.vue'
+import PrivacyPolicy1 from '@/components/shared/PrivacyPolicy.vue'
 
 export default {
   name: 'PrivacyPolicy',
   components: {
-    PrivacyPolicy,
+    PrivacyPolicy1,
   },
   layout: 'DefaultLayout',
 }

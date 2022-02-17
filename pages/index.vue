@@ -13,7 +13,6 @@
 import HeroCard from '@/components/homepage/HeroCard.vue'
 import HouseView from '@/components/shared/HouseView.vue'
 import ReviewSection from '~/components/homepage/ReviewSection.vue'
-
 import client from '~/plugins/contentful'
 
 export default {
@@ -36,7 +35,11 @@ export default {
     this.houses = response.items
       .slice()
       .reverse()
-      .map((item) => console.log('checking here', item))
+      .map((item) => {
+        return {
+          ...item.fields,
+        }
+      })
   },
 }
 </script>

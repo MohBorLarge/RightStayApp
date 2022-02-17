@@ -66,6 +66,6 @@
 
 <script>
 export default {
-  name: 'PrivacyPolicy',
+  name: 'PrivacyPolicy1',
 }
 </script>

@@ -38,35 +38,11 @@
           <p>55 sqr feet</p>
         </div>
         <div class="grid grid-cols-3 gap-2">
-          <p class="bg-gray-200 rounded p-1 w-24">Guest Toilet</p>
-          <p class="bg-gray-200 rounded p-1 w-24">Kitchen</p>
-          <p class="bg-gray-200 rounded p-1 w-24">Guest Toilet</p>
-          <p class="bg-gray-200 rounded p-1 w-24">Guest Toilet</p>
-          <p class="bg-gray-200 rounded p-1 w-24">Guest Toilet</p>
-        </div>
-        <div class="my-8">
-          <div class="flex justify-between text-xl mb-4">
-            <p class="font-semibold">Property Type</p>
-            <p>Apartment</p>
-          </div>
-          <div class="flex justify-between text-xl mb-4">
-            <p class="font-semibold">Check In</p>
-            <p>01/01/2022</p>
-          </div>
-          <div class="flex justify-between text-xl mb-4">
-            <div>
-              <p class="font-semibold">Duration</p>
-              <p class="text-sm">@ $1500</p>
-            </div>
-            <div>
-              <p class="font-semibold">3 Days</p>
-              <p class="text-sm">$4500</p>
-            </div>
-          </div>
-          <div class="flex justify-between text-xl">
-            <p class="font-semibold">Sales Tax</p>
-            <p>$10</p>
-          </div>
+          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
+          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Kitchen</p>
+          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
+          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
+          <p class="bg-gray-200 rounded-lg px-2 py-1 w-full">Guest Toilet</p>
         </div>
         <div>
           <div class="flex justify-between font-bold text-3xl mb-4">
@@ -74,9 +50,9 @@
             <p>$4510</p>
           </div>
           <div
-            class="bg-green-400 p-3 text-center rounded-md text-3xl text-white"
+            class="bg-green-400 p-3 text-center rounded-md text-3xl text-white cursor-pointer"
           >
-            <button>Rent Now</button>
+            Rent Now
           </div>
         </div>
       </div>
@@ -87,7 +63,7 @@
         >
           <div>
             <p class="ease">Description</p>
-            <hr class="text-green-400" />
+            <hr class="text-green-400 mt-2" style="border-top: 2px solid" />
           </div>
         </div>
         <div class="mb-12">

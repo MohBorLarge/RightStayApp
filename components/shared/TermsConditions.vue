@@ -66,6 +66,6 @@
 
 <script>
 export default {
-  name: 'TermsConditions',
+  name: 'TermsConditions1',
 }
 </script>
