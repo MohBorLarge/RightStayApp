@@ -32,7 +32,7 @@
           <input
             type="text"
             name=""
-            value="$5000"
+            value="₦5000"
             class="text-green-400 w-14 order-none"
           />
         </form>

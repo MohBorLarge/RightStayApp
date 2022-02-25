@@ -5,7 +5,7 @@
         <img
           src="@/assets/RightStayLogo/svg/bluegreen.svg"
           alt=""
-          class="w-1/6"
+          class="w-1/6 "
         />
       </nuxt-link>
       <ul class="flex cursor-pointer text-lg font-semibold w-3/12">

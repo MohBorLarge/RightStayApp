@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-24">
+  <div class="pb-24 px-12 sm:px-0">
     <div class="mb-12">
       <p class="text-5xl font-bold">{{ currentHouse.houseTitle }}</p>
       <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-16">
+    <div class="block sm:grid grid-cols-2 gap-16">
       <div>
         <p class="text-4xl font-bold mb-8">Facilities</p>
         <div class="flex justify-between w-8/12 mb-6">
@@ -90,14 +90,14 @@
             <input type="email" name="email" placeholder="johndoe@mail.com" />
             <label for="phoneNumber">Phone Number:</label>
             <input type="number" name="phoneNumber" placeholder="080 1234 567" />
-            <div class="flex justify-between">
-              <div class="grid grid-cols-1 gap-2">
+            <div class="flex">
+              <div class="grid grid-cols-1 gap-2 mr-8">
                 <label for="noOfAdults">Adults:</label>
-                <input type="number" name="noOfAdults" placeholder="2" />
+                <input type="number" name="noOfAdults" placeholder="0" />
               </div>
               <div class="grid grid-cols-1 gap-2">
                 <label for="noOfKids">Children:</label>
-                <input type="number" name="noOfKids" placeholder="2" />
+                <input type="number" name="noOfKids" placeholder="0" />
               </div>
             </div>
             <label>From:</label>

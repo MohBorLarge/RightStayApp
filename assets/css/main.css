@@ -52,7 +52,9 @@ hr {
 .footer {
   background-image: url('@/assets/images/footer.jpeg');
 }
-
+.footer .container{
+  background-image: url('@/assets/images/footer.jpeg');
+}
 .color-green {
   color: #38f4ac;
 }

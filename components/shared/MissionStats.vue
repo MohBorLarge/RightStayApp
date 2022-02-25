@@ -2,7 +2,7 @@
   <div class="grid grid-cols-3 gap-20 py-20">
     <div class="flex w-2/4">
       <div class="text-5xl mr-6">
-        <h3>$15.4M</h3>
+        <h3>₦15.4M</h3>
       </div>
       <div class="text-xl font-light uppercase">
         <p>owned from properties transactions</p>

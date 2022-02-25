@@ -15,24 +15,24 @@
       </div>
     </div>
 
-    <div class="grid gap-10 mb-12" :class="`grid-cols-${noOfCols}`">
+    <div class="grid gap-10 mb-12 mx-12 grid-cols-1 sm:mx-0" :class="`sm:grid-cols-${noOfCols}`">
       <div
         v-for="(item, index) in houses"
         :key="index"
         class="bg-white p-4 rounded-lg"
       >
         <div class="pb-6">
-          <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
+          <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg w-full" />
         </div>
-        <p class="text-xl font-bold">{{ item.houseTitle }}</p>
-        <div class="flex mt-4 mb-2">
+        <p class="text-4xl font-bold sm:text-2xl">{{ item.houseTitle }}</p>
+        <div class="flex mt-4 mb-2 text-xl sm:text-lg">
           <navigation-2-icon
             size="1.2x"
             class="custom-class"
           ></navigation-2-icon>
           <p>{{ item.houseAddress }}, {{ item.state }}</p>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between text-xl sm:text-lg">
           <div class="flex">
             <hard-drive-icon
               size="1.5x"
@@ -57,7 +57,7 @@
           <BaseButton
             title="View House"
             :link="`/single-house/${item.houseId}`"
-            class="mt-6"
+            class=""
           />
         </div>
       </div>
