@@ -15,7 +15,7 @@ import AboutUs from '@/components/shared/AboutUs.vue'
 import MissionStats from '@/components/shared/MissionStats.vue'
 
 export default {
-  name: 'AboutRightStay',
+  name: 'AboutRightHome',
   components: {
     HeroCard,
     AboutUs,

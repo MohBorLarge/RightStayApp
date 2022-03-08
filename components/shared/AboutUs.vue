@@ -5,7 +5,7 @@
     </div>
     <div class="text-xl font-light">
       <p class="mb-8">
-        RightStay is one of the world's leading property agents. Our experience
+        RightHome is one of the world's leading property agents. Our experience
         spans the globe.
       </p>
       <p class="mb-8">
