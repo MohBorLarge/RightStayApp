@@ -13,7 +13,7 @@
           <nuxt-link to="/all-houses">Short Lets</nuxt-link>
         </li>
         <li class="w-full hover:text-green-400">
-          <nuxt-link to="/about-rightstay">About Us</nuxt-link>
+          <nuxt-link to="/about-righthome">About Us</nuxt-link>
         </li>
       </ul>
     </header>

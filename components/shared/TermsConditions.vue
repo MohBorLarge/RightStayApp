@@ -50,18 +50,58 @@
             based on your personal preferences. In addition to the previous, if we have obtained consent, we
             may contact you with special offers that may be of particular interest to you.
             Righthome processes your personal data for the following purposes:</p>
-            <ul>
-              <li>Handling your reservation and payment</li>
-              <li>Inform you about changes to our services and products</li>
-              <li>To deliver goods and services to you</li>
-              <li>Requesting a review to keep improving our services</li>
+            <ul class="pl-8">
+              <li>Handling your reservation and payment.</li>
+              <li>Inform you about changes to our services and products.</li>
+              <li>To deliver goods and services to you.</li>
+              <li>Requesting a review to keep improving our services.</li>
               <li>Short Stay Group analyzes your behavior on the website in order to improve the websiteand to adjust the range of products and services to your preferences.</li>
-              <li>How long we store personal data</li>
+              <li>How long we store personal data.</li>
             </ul>
         </div>
         <div class="mb-8">
             <h2 class="font-black"></h2>
             <p></p>
+        </div>
+        <div class="mb-8">
+            <h2 class="font-black">PRIVACY SHARING (YOUR PERSONAL INFORMATION)</h2>
+            <p>
+              Righthome does not sell, trade, or rent users personal identification information to others. We
+              may share generic aggregated demographic information not linked to any personal identification
+              information regarding visitors and users with our business partners, trusted affiliates and
+              advertisers for the purposes outlined above. 
+            </p>
+        </div>
+        <div class="mb-8">
+            <h2 class="font-black">CHANGES TO THIS PRIVACY POLICY</h2>
+            <p>
+              Righthome has the discretion to update this privacy policy at any time. When we do, we will post
+              a notification on the main page of our website, revise the updated date at the bottom of this page.
+              We encourage users to frequently check this page for any changes to stay informed about how
+              we are helping to protect the personal information we collect. You acknowledge and agree that it
+              is your responsibility to review this privacy policy periodically and become aware of
+              modifications.
+            </p>
+        </div>
+        <div class="mb-8">
+            <h2 class="font-black">ACCEPTANCE OF THESE TERMS</h2>
+            <p>
+              By using this website, you signify your acceptance of this policy. If you do not agree to this
+              policy, please do not use our Site. Your continued use of the Site following the posting of
+              changes to this policy will be deemed your acceptance of those changes.
+            </p>
+        </div>
+        <div class="mb-8">
+            <h2 class="font-black">Contacting us</h2>
+            <p>
+              If you have any questions about this Privacy Policy, the practices of this site, or your dealings
+              with this site, please contact us at:
+              <br><br>
+              http://www.Righthome.net <br>
+              Email: www.Righthome@gmail.com
+              <br><br>
+              <p class="font-black">Let's keep you posted</p>
+            </p>
         </div>
       </div>
     </div>  
@@ -73,3 +113,8 @@ export default {
   name: 'TermsConditions1',
 }
 </script>
+<style scoped>
+li {
+  list-style: square;
+}
+</style>

@@ -4,8 +4,8 @@
       <header-bar />
       <nuxt />
     </div>
-    <whats-app class="pb-12"/>
     <footer-section />
+    <whats-app class="pb-12" />
   </div>
 </template>
 
@@ -18,13 +18,12 @@ import WhatsApp from '@/components/shared/WhatsApp.vue'
 export default {
   name: 'DefaultLayout',
   components: {
-    HeaderBar, FooterSection,
-    WhatsApp
+    HeaderBar,
+    FooterSection,
+    WhatsApp,
   },
   data() {
-    return {
-      
-    }
-  }
+    return {}
+  },
 }
 </script>
