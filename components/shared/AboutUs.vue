@@ -5,6 +5,7 @@
     </div>
     <div class="text-xl font-light">
       <p class="mb-8">
+
         <b>RIGHTHOME</b> is your exclusive oasis, offering contemporary ambience and
         premium serviced apartments in the heart of Ikota, Lagos, Nigeria.<br> We
         graciously host you to a range of premium serviced apartments. From our

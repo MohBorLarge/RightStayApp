@@ -16,7 +16,7 @@
             />
           </div>
           <div class="w-3/12 grid grid-cols-1 gap-6">
-            <div v-for="item in [1, 2, 3, 4]" :key="item" class="">
+            <div v-for="item in houses" :key="item" class="">
               <img
                 src="@/assets/images/newhome3.jpeg"
                 alt=""
@@ -142,17 +142,25 @@
 import { HardDriveIcon, SquareIcon } from 'vue-feather-icons'
 
 export default {
+  
   name: 'ViewHouse',
+  
   components: {
     HardDriveIcon,
     SquareIcon,
   },
+  
   props: {
     currentHouse: {
       type: Object,
       default: () => {},
       required: true,
     },
+  },
+  data() {
+    return{
+      houses: [1, 2, 3, 4]
+    }
   },
 }
 </script>

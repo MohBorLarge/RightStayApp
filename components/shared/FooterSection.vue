@@ -19,9 +19,9 @@
             <li>
               <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
             </li>
-            <li>
+            <!-- <li>
               <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
-            </li>
+            </li> -->
             <li>
               <nuxt-link to="terms-conditions">Term &amp; Conditions</nuxt-link>
             </li>

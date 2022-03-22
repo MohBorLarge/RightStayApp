@@ -25,7 +25,7 @@ export default {
   data() {
     return {
       headerLinks: {
-        home: 'https://github.com/johnpapa/vue-getting-started',
+        home: 'https://google.com/',
       },
     }
   },
