@@ -4,11 +4,12 @@
       <div class="flex py-24">
         <div class="w-2/4 text-3xl font-bold pr-16">
           <p class="mb-4">
-            59 Bervely Hill Ave, Brooklyn Town, New York, NY 5630, CA, US
+            Adonai House, A11, Adeniyi Coker Street, Dideolu Estate, Oniru,
+            Victoria Island, Lagos.
           </p>
-          <p class="mb-4">+056 686 56 56 98</p>
-          <a href="mailto@hello@RightHome.com" class="color-green"
-            >hello@rightsource.com</a
+          <p class="mb-4">+234 809 311 1555</p>
+          <a href="mailto@info@rightstay.ng" class="color-green"
+            >info@rightstay.ng</a
           >
         </div>
         <div class="w-1/4 text-xl">
@@ -19,9 +20,6 @@
             <li>
               <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
             </li>
-            <!-- <li>
-              <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
-            </li> -->
             <li>
               <nuxt-link to="terms-conditions">Term &amp; Conditions</nuxt-link>
             </li>
@@ -37,12 +35,18 @@
               <a href="https://www.twitter.com">Twitter</a>
             </li>
             <li class="flex items-center">
-              <facebook-icon size="1x" class="custom-class mr-4"></facebook-icon>
+              <facebook-icon
+                size="1x"
+                class="custom-class mr-4"
+              ></facebook-icon>
               <a href="https://www.facebook.com">Facebook</a>
             </li>
             <li></li>
             <li class="flex items-center">
-              <instagram-icon size="1x" class="custom-class mr-4"></instagram-icon>
+              <instagram-icon
+                size="1x"
+                class="custom-class mr-4"
+              ></instagram-icon>
               <a href="https://www.instagram.com/righthomeng/">Instagram</a>
             </li>
           </ul>
