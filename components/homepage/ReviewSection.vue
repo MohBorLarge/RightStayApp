@@ -9,7 +9,7 @@
         <div class="text-right">
           <p class="mb-16 text-2xl font-light">
             “As a buyer in a busy market where everyone is a real estate agent,
-            I seek transparency in true numbers &amp; RightStay is my first and
+            I seek transparency in true numbers &amp; RightHome is my first and
             only choice. Searches for multiplexes, property comparisons, and the
             loan estimator. Works great.”
           </p>
@@ -23,7 +23,7 @@
       <div class="w-1/2">
         <p class="mb-16 text-2xl font-light">
           “As a buyer in a busy market where everyone is a real estate agent, I
-          seek transparency in true numbers &amp; RightStay is my first and only
+          seek transparency in true numbers &amp; RightHome is my first and only
           choice. Searches for multiplexes, property comparisons, and the loan
           estimator. Works great.”
         </p>

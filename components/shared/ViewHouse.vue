@@ -76,7 +76,7 @@
         </div>
         <div>
           <form
-            action="https://formsubmit.co/info@rightstay.ng"
+            action="https://formsubmit.co/info@RightStay.ng"
             method="POST"
             class="grid grid-cols-1 gap-4 my-12"
           >

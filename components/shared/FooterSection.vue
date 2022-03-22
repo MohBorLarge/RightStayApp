@@ -7,7 +7,7 @@
             59 Bervely Hill Ave, Brooklyn Town, New York, NY 5630, CA, US
           </p>
           <p class="mb-4">+056 686 56 56 98</p>
-          <a href="mailto@hello@RightStay.com" class="color-green"
+          <a href="mailto@hello@RightHome.com" class="color-green"
             >hello@rightsource.com</a
           >
         </div>
@@ -17,7 +17,7 @@
               <nuxt-link to="/all-houses">Short Lets</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/about-rightstay">About RightStay</nuxt-link>
+              <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
@@ -34,16 +34,16 @@
           <ul>
             <li class="flex items-center">
               <twitter-icon size="1x" class="custom-class mr-4"></twitter-icon>
-              <a href="about-us.html">Twitter</a>
+              <a href="https://www.twitter.com">Twitter</a>
             </li>
             <li class="flex items-center">
               <facebook-icon size="1x" class="custom-class mr-4"></facebook-icon>
-              <a href="about-us.html">Facebook</a>
+              <a href="https://www.facebook.com">Facebook</a>
             </li>
             <li></li>
             <li class="flex items-center">
               <instagram-icon size="1x" class="custom-class mr-4"></instagram-icon>
-              <a href="about-us.html">Instagram</a>
+              <a href="https://www.instagram.com/righthomeng/">Instagram</a>
             </li>
           </ul>
         </div>
@@ -52,7 +52,7 @@
       <div class="pb-12 text-center mt-12 text-xl">
         <p>
           © {{ new Date().getFullYear() }}
-          <strong class="font-black">RightStay</strong>. All right reserved
+          <strong class="font-black">RightHome</strong>. All right reserved
         </p>
       </div>
     </div>
