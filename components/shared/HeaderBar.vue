@@ -12,8 +12,8 @@
         <li class="hover:text-green-400">
           <nuxt-link to="/all-houses">Short Lets</nuxt-link>
         </li>
-        <li class="hover:text-green-400">
-          <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
+        <li class="w-full hover:text-green-400">
+          <nuxt-link to="/about-righthome">About Us</nuxt-link>
         </li>
       </ul>
     </header>
