@@ -1,107 +1,84 @@
 <template>
-  <div class="footer text-white">
+  <div class="footer text-white px-12 sm:px-0">
     <div class="container">
-      <div class="pt-40 w-full flex">
-        <div class="w-4/5 flex">
-          <div class="w-2/4">
-            <div class=" max-w-sm">
-              <div class="ps-widget__content">
-                <p class="mb-4">
-                  59 Bervely Hill Ave, Brooklyn Town, <br> New York, NY 5630, CA, US
-                </p>
-                <p class="mb-4">+056 686 56 56 98</p>
-                <p>
-                  <a href="mailto@hello@finderland.com">hello@rightsource.com</a>
-                </p>
-                <div class="ps-social-links light">
-                  <a href="#"><i class="lnir lnir-twitter-filled"></i></a
-                  ><a href="#"><i class="lnir lnir-facebook-filled"></i></a
-                  ><a href="#"><i class="lnir lnir-google"></i></a
-                  ><a href="#"><i class="lnir lnir-youtube"></i></a
-                  ><a href="#"><i class="lnir lnir-vimeo"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="ps-widget ps-widget--footer">
-              <div class="ps-widget__content">
-                <ul class="ps-widget__links">
-                  <li><a href="shop.html">For sell</a></li>
-                  <li><a href="shop.html">For Rent</a></li>
-                  <li><a href="shop.html">Consult</a></li>
-                  <li><a href="shop.html">Privacy Policy</a></li>
-                  <li><a href="shop.html">Term &amp; Conditions</a></li>
-                  <li><a href="shop.html">FAQs</a></li>
-                  <li><a href="shop.html">User's Guide</a></li>
-                  <li><a href="shop.html">Sitemap</a></li>
-                  <li><a href="shop.html">Download App</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="w-1/4">
-            <div class="ps-widget ps-widget--footer">
-              <div class="ps-widget__content">
-                <ul class="ps-widget__links">
-                  <li><a href="about-us.html">about</a></li>
-                  <li><a href="contact-us.html">Contact</a></li>
-                  <li><a href="careers.html">Careers</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="help-center.html">Help Center</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="flex py-24">
+        <div class="w-2/4 text-3xl font-bold pr-16">
+          <p class="mb-4">
+            59 Bervely Hill Ave, Brooklyn Town, New York, NY 5630, CA, US
+          </p>
+          <p class="mb-4">+056 686 56 56 98</p>
+          <a href="mailto@hello@RightHome.com" class="color-green"
+            >hello@rightsource.com</a
+          >
         </div>
-        <div class="subscribe w-1/5">
-          <div class="ps-widget ps-widget--footer ps-widget--footer-subscribe">
-            <div class="ps-widget__content">
-              <form
-                class="ps-form--widget-subscribe"
-                action="index.html"
-                method="get"
-              >
-                <div class="ps-form__top">
-                  <p>
-                    Be the first to get the latest news about market, promotions
-                    and much more!
-                  </p>
-                </div>
-                <div class="ps-form__content">
-                  <div class="ps-form__icon"><i class="icon-envelope"></i></div>
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Email Address"
-                  />
-                  <button><i class="icon-arrow-right"></i></button>
-                </div>
-                <div class="ps-form__bottom">
-                  <p>
-                    By subscribing, you accept the
-                    <a href="#">Privacy Policy</a>
-                  </p>
-                </div>
-              </form>
-            </div>
-          </div>
+        <div class="w-1/4 text-xl">
+          <ul>
+            <li>
+              <nuxt-link to="/all-houses">Short Lets</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
+            </li>
+            <!-- <li>
+              <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
+            </li> -->
+            <li>
+              <nuxt-link to="terms-conditions">Term &amp; Conditions</nuxt-link>
+            </li>
+            <li>
+              <a href="https://rightsourceng.com/">Rightsource Website</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/4 text-xl">
+          <ul>
+            <li class="flex items-center">
+              <twitter-icon size="1x" class="custom-class mr-4"></twitter-icon>
+              <a href="about-us.html">Twitter</a>
+            </li>
+            <li class="flex items-center">
+              <facebook-icon size="1x" class="custom-class mr-4"></facebook-icon>
+              <a href="about-us.html">Facebook</a>
+            </li>
+            <li></li>
+            <li class="flex items-center">
+              <instagram-icon size="1x" class="custom-class mr-4"></instagram-icon>
+              <a href="about-us.html">Instagram</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="ps-footer__bottom">
-        <div class="ps-footer__copyright">
-          <p>© 2021 <strong>Finderland</strong>. All right reserved</p>
-        </div>
+      <hr style="border-color: white" />
+      <div class="pb-12 text-center mt-12 text-xl">
+        <p>
+          © {{ new Date().getFullYear() }}
+          <strong class="font-black">RightHome</strong>. All right reserved
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { TwitterIcon, FacebookIcon, InstagramIcon } from 'vue-feather-icons'
+
 export default {
   name: 'FooterSection',
+  components: { TwitterIcon, FacebookIcon, InstagramIcon },
   data() {
     return {}
   },
 }
 </script>
+
+<style scoped>
+ul li {
+  margin: 1rem 0;
+}
+ul li:first-child {
+  margin-top: 0;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+</style>

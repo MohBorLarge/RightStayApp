@@ -1,31 +1,28 @@
 <template>
   <div>
-    <hero-card
-      text="Find the perfect place to stay with your family in several locations"
-    />
-    <house-view :houses="houses" />
+    <view-house :current-house="currentHouse" />
     <hr />
-    <review-section />
+    <mission-stats />
   </div>
 </template>
-
 <script>
-import HeroCard from '@/components/homepage/HeroCard.vue'
-import HouseView from '@/components/shared/HouseView.vue'
-import ReviewSection from '~/components/homepage/ReviewSection.vue'
+import MissionStats from '@/components/shared/MissionStats.vue'
+import ViewHouse from '@/components/shared/ViewHouse.vue'
 import client from '~/plugins/contentful'
 
 export default {
-  name: 'HomePage',
+  name: 'SingleHousePage',
   components: {
-    HeroCard,
-    HouseView,
-    ReviewSection,
+    MissionStats,
+    ViewHouse,
   },
+
   layout: 'DefaultLayout',
+
   data() {
     return {
       houses: [],
+      currentHouse: {},
     }
   },
   async created() {
@@ -40,6 +37,12 @@ export default {
           ...item.fields,
         }
       })
+
+    this.currentHouse = this.houses.find(
+      (item) => item.houseId === this.$route.params.id
+    )
+
+    console.log('checking currentHouse', this.currentHouse)
   },
 }
 </script>

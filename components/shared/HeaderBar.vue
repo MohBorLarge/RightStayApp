@@ -1,33 +1,34 @@
 <template>
   <div>
     <header class="flex items-center mt-8 mb-12 justify-between">
-      <img src="@/assets/RightStayLogo/svg/bluegreen.svg" alt="" class="w-40" />
-      <ul class="w-2/5 flex justify-between text-green-400 cursor-pointer">
-        <li>
-          <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/">
+        <img
+          src="@/assets/RightHomeLogo/svg/bluegreen.svg"
+          alt=""
+          class="w-1/6 "
+        />
+      </nuxt-link>
+      <ul class="flex cursor-pointer text-lg font-semibold w-3/12">
+        <li class="w-full hover:text-green-400">
+          <nuxt-link to="/all-houses">Short Lets</nuxt-link>
         </li>
-        <li>
-          About Us
+        <li class="w-full hover:text-green-400">
+          <nuxt-link to="/about-rightstay">About Us</nuxt-link>
         </li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Buy Property</li>
       </ul>
     </header>
   </div>
 </template>
 <script>
-  export default {
-    name: "HeaderBar",
-    data() {
-      return {
-        headerLinks: {
-          home: "https://github.com/johnpapa/vue-getting-started"
-        }
-      }
-    },
-    methods: {
-      
+export default {
+  name: 'HeaderBar',
+  data() {
+    return {
+      headerLinks: {
+        home: 'https://google.com/',
+      },
     }
-  }
+  },
+  methods: {},
+}
 </script>

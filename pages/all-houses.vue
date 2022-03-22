@@ -1,26 +1,21 @@
 <template>
   <div>
-    <hero-card
-      text="Find the perfect place to stay with your family in several locations"
-    />
-    <house-view :houses="houses" />
+    <house-view :houses="houses" :show-view-all-btn="false" />
     <hr />
-    <review-section />
+    <mission-stats />
   </div>
 </template>
 
 <script>
-import HeroCard from '@/components/homepage/HeroCard.vue'
 import HouseView from '@/components/shared/HouseView.vue'
-import ReviewSection from '~/components/homepage/ReviewSection.vue'
+import MissionStats from '@/components/shared/MissionStats.vue'
 import client from '~/plugins/contentful'
 
 export default {
-  name: 'HomePage',
+  name: 'AllHouses',
   components: {
-    HeroCard,
     HouseView,
-    ReviewSection,
+    MissionStats,
   },
   layout: 'DefaultLayout',
   data() {

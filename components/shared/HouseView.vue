@@ -1,54 +1,86 @@
 <template>
-  <div class="flex">
-    <p v-if="!fullScreen" class="text-green-400 w-3/6 mt-8 mr-24 text-xl">
-      Lagos State
-    </p>
-    <div class="grid gap-10 mb-12" :class="`grid-cols-${noOfCols}`">
-      <div v-for="item in houses" :key="item" class="bg-white p-4 rounded-lg">
-        <div class="pb-6">
-          <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg" />
-        </div>
-        <div class="text-xl mb-2">
-          <p class="text-green-400">$300,000</p>
-        </div>
-        <div class="location flex text-gray-400">
-          <div>
-            <LocationSharp
-              class="text-gray-400 h-4"
-              style="margin: 3px 2px 0 0"
-            />
-          </div>
-          <p>Preston Rd, Birmingham</p>
-        </div>
-        <div class="details flex justify-between">
-          <div class="flex text-gray-400">
-            <BedOutline class="h-4" style="margin: 3px 3px 0 0" />
-            <p>4 Bd.</p>
-          </div>
-          <div class="flex text-gray-400">
-            <SBath class="h-4" style="margin: 3px 3px 0 0" />
-            <p>2 Ba.</p>
-          </div>
-          <div class="flex text-gray-400">
-            <SquareSharp class="h-4" style="margin: 3px 3px 0 0" />
-            <p>890 sqft.</p>
-          </div>
-        </div>
-        <nuxt-link to="/single-house">
-          <button
-            class="bg-green-600 hover:bg-green-700 text-white py-2 w-full mt-4 text-center rounded-md"
-          >
-            View House
-          </button>
-        </nuxt-link>
+  <div class="py-20">
+    <div class="pb-20 text-center">
+      <p class="text-3xl font-bold mb-6">
+        Select from our most popular locations
+      </p>
+      <div>
+        <a
+          v-for="(item, index) in filterItems"
+          :key="index"
+          class="filter-card mx-2 rounded-full px-4 py-2 cursor-pointer"
+        >
+          {{ item.text }}
+        </a>
       </div>
+    </div>
+
+    <div class="grid gap-10 mb-12 mx-12 grid-cols-1 sm:mx-0" :class="`sm:grid-cols-${noOfCols}`">
+      <div
+        v-for="(item, index) in houses"
+        :key="index"
+        class="bg-white p-4 rounded-lg"
+      >
+        <div class="pb-6">
+          <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg w-full" />
+        </div>
+        <p class="text-4xl font-bold sm:text-2xl">{{ item.houseTitle }}</p>
+        <div class="flex mt-4 mb-2 text-xl sm:text-lg">
+          <navigation-2-icon
+            size="1.2x"
+            class="custom-class"
+          ></navigation-2-icon>
+          <p>{{ item.houseAddress }}, {{ item.state }}</p>
+        </div>
+        <div class="flex justify-between text-xl sm:text-lg">
+          <div class="flex">
+            <hard-drive-icon
+              size="1.5x"
+              class="custom-class mr-2"
+            ></hard-drive-icon>
+            <p>{{ item.noOfBedrooms }} Beds</p>
+          </div>
+          <div class="flex">
+            <hard-drive-icon
+              size="1.5x"
+              class="custom-class mr-2"
+            ></hard-drive-icon>
+            <p>{{ item.noOfBathrooms }} Baths</p>
+          </div>
+          <div class="flex">
+            <square-icon size="1.3x" class="custom-class mr-2"></square-icon>
+            <p>{{ item.squareFeet }} Sqft.</p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-8">
+          <p class="w-1/2 text-green-500 text-2xl">₦{{ item.price }}</p>
+          <BaseButton
+            title="View House"
+            :link="`/single-house/${item.houseId}`"
+            class=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div v-if="showViewAllBtn" class="text-center w-full my-8">
+      <BaseButton title="View all houses" link="/all-houses" />
     </div>
   </div>
 </template>
 
 <script>
+import { HardDriveIcon, Navigation2Icon, SquareIcon } from 'vue-feather-icons'
+import BaseButton from '@/components/base/BaseButton.vue'
+
 export default {
   name: 'HouseView',
+  components: {
+    BaseButton,
+    HardDriveIcon,
+    Navigation2Icon,
+    SquareIcon,
+  },
   props: {
     houses: {
       type: Array,
@@ -59,10 +91,44 @@ export default {
       type: Number,
       default: 3,
     },
-    fullScreen: {
+    showViewAllBtn: {
       type: Boolean,
-      default: false,
+      default: true,
     },
+  },
+  data() {
+    return {
+      filterItems: [
+        {
+          text: 'Lagos',
+          value: 'lagos',
+        },
+        {
+          text: 'Abuja',
+          value: 'abuja',
+        },
+        {
+          text: 'Port Harcourt',
+          value: 'ph',
+        },
+        {
+          text: 'Lekki',
+          value: 'lekki',
+        },
+        {
+          text: 'Victoria Island',
+          value: 'vi',
+        },
+        {
+          text: 'Lekki',
+          value: 'lekki',
+        },
+        {
+          text: 'Victoria Island',
+          value: 'vi',
+        },
+      ],
+    }
   },
 }
 </script>
