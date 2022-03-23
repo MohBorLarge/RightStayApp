@@ -5,23 +5,34 @@
       <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
     </div>
     <div class="flex w-full">
-      <div class="images w-full mr-10">
+      <div class="images w-full">
         <div class="flex mb-10">
           <div class="mr-6 w-full">
             <img
-              src="@/assets/images/newhome1.jpeg"
-              alt=""
-              srcset=""
-              class="h-full rounded-md"
+              :src="`https:${
+                currentHouse.houseImages
+                  ? currentHouse.houseImages[0].fields.file.url
+                  : null
+              }`"
+              :alt="
+                currentHouse.houseImages
+                  ? currentHouse.houseImages[0].fields.title
+                  : null
+              "
+              class="h-full rounded-md object-cover"
+              style="height: 610px; width: 100%"
             />
           </div>
           <div class="w-3/12 grid grid-cols-1 gap-6">
-            <div v-for="item in houses" :key="item" class="">
+            <div
+              v-for="item in currentHouse.houseImages"
+              :key="item"
+              class="feat-images"
+            >
               <img
-                src="@/assets/images/newhome3.jpeg"
-                alt=""
-                srcset=""
-                class="rounded-md object-cover"
+                :src="`https:${item.fields.file.url}`"
+                :alt="item.fields.title"
+                class="rounded-md object-cover cursor-pointer"
               />
             </div>
           </div>
@@ -89,7 +100,11 @@
             <label for="email">Email:</label>
             <input type="email" name="email" placeholder="johndoe@mail.com" />
             <label for="phoneNumber">Phone Number:</label>
-            <input type="number" name="phoneNumber" placeholder="080 1234 567" />
+            <input
+              type="number"
+              name="phoneNumber"
+              placeholder="080 1234 567"
+            />
             <div class="flex">
               <div class="grid grid-cols-1 gap-2 mr-8">
                 <label for="noOfAdults">Adults:</label>
@@ -142,25 +157,19 @@
 import { HardDriveIcon, SquareIcon } from 'vue-feather-icons'
 
 export default {
-  
   name: 'ViewHouse',
-  
+
   components: {
     HardDriveIcon,
     SquareIcon,
   },
-  
+
   props: {
     currentHouse: {
       type: Object,
       default: () => {},
       required: true,
     },
-  },
-  data() {
-    return{
-      houses: [1, 2, 3, 4]
-    }
   },
 }
 </script>
@@ -169,5 +178,11 @@ export default {
 form input {
   height: 40px;
   padding-left: 10px;
+}
+.feat-images:hover {
+  padding: 3px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  transition: .3s ease-in-out;
 }
 </style>

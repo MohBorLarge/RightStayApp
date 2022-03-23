@@ -41,8 +41,6 @@ export default {
     this.currentHouse = this.houses.find(
       (item) => item.houseId === this.$route.params.id
     )
-
-    console.log('checking currentHouse', this.currentHouse)
   },
 }
 </script>
