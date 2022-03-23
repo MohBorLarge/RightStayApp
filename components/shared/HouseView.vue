@@ -103,30 +103,30 @@ export default {
           text: 'Lagos',
           value: 'lagos',
         },
-        {
-          text: 'Abuja',
-          value: 'abuja',
-        },
-        {
-          text: 'Port Harcourt',
-          value: 'ph',
-        },
-        {
-          text: 'Lekki',
-          value: 'lekki',
-        },
-        {
-          text: 'Victoria Island',
-          value: 'vi',
-        },
-        {
-          text: 'Lekki',
-          value: 'lekki',
-        },
-        {
-          text: 'Victoria Island',
-          value: 'vi',
-        },
+        // {
+        //   text: 'Abuja',
+        //   value: 'abuja',
+        // },
+        // {
+        //   text: 'Port Harcourt',
+        //   value: 'ph',
+        // },
+        // {
+        //   text: 'Lekki',
+        //   value: 'lekki',
+        // },
+        // {
+        //   text: 'Victoria Island',
+        //   value: 'vi',
+        // },
+        // {
+        //   text: 'Lekki',
+        //   value: 'lekki',
+        // },
+        // {
+        //   text: 'Victoria Island',
+        //   value: 'vi',
+        // },
       ],
     }
   },

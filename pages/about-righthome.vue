@@ -1,7 +1,7 @@
 <template>
   <div>
     <hero-card
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+      text="Find the perfect place to stay with your family in several locations"
     />
     <about-us />
     <hr />

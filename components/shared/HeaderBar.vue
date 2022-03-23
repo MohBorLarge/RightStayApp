@@ -8,11 +8,11 @@
           class="w-1/6 "
         />
       </nuxt-link>
-      <ul class="flex cursor-pointer text-lg font-semibold w-3/12">
-        <li class="w-full hover:text-green-400">
-          <nuxt-link to="/all-houses">Short Lets</nuxt-link>
+      <ul class="flex justify-between cursor-pointer text-lg font-semibold w-3/12">
+        <li class="hover:text-green-400">
+          <nuxt-link to="/all-houses">ShortLets</nuxt-link>
         </li>
-        <li class="w-full hover:text-green-400">
+        <li class="hover:text-green-400">
           <nuxt-link to="/about-righthome">About Us</nuxt-link>
         </li>
       </ul>
