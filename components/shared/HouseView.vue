@@ -15,14 +15,23 @@
       </div>
     </div>
 
-    <div class="grid gap-10 mb-12 mx-12 grid-cols-1 sm:mx-0" :class="`sm:grid-cols-${noOfCols}`">
+    <div
+      class="flex justify-between mb-12 mx-12 sm:mx-0"
+      :class="`sm:grid-cols-${noOfCols}`"
+    >
       <div
         v-for="(item, index) in houses"
         :key="index"
-        class="bg-white p-4 rounded-lg"
+        class="houses bg-white p-4 rounded-lg w-1/3"
       >
         <div class="pb-6">
-          <img src="@/assets/images/home3.jpeg" alt="" class="rounded-lg w-full" />
+          <img
+            :src="`https:${
+              item.houseImages ? item.houseImages[0].fields.file.url : null
+            }`"
+            :alt="item.houseImages ? item.houseImages[0].fields.title : null"
+            class="rounded-lg w-full h-60"
+          />
         </div>
         <p class="text-4xl font-bold sm:text-2xl">{{ item.houseTitle }}</p>
         <div class="flex mt-4 mb-2 text-xl sm:text-lg">
@@ -132,3 +141,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.houses {
+  margin: 0 1rem;
+}
+.houses:first-child {
+  margin-left: 0;
+}
+.houses:last-child {
+  margin-right: 0;
+}
+</style>

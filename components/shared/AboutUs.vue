@@ -1,16 +1,16 @@
 <template>
   <div class="grid grid-cols-2 gap-16 py-24">
     <div class="text-5xl">
-      Our mission is to redefine real estate in the customer's favor.
+      To redefine Real Estate to suit our customer's needs and taste.
     </div>
     <div class="text-xl font-light">
       <p class="mb-8">
-
-        <b>RIGHTHOME</b> is your exclusive oasis, offering contemporary ambience and
-        premium serviced apartments in the heart of Ikota, Lagos, Nigeria.<br> We
-        graciously host you to a range of premium serviced apartments. From our
-        1-bedroom apartments. Enjoy the splendour of your daily lifestyle while
-        being offered exceptional privacy and comfort in a contemporary
+        <b>RIGHTHOME</b> is your exclusive oasis, offering contemporary ambience
+        and premium serviced apartments in the heart of Ikota, Lagos,
+        Nigeria.<br />
+        We graciously host you to a range of premium serviced apartments. From
+        our 1-bedroom apartments. Enjoy the splendour of your daily lifestyle
+        while being offered exceptional privacy and comfort in a contemporary
         atmosphere. The staff offer exceptional service with the highest
         professionalism and are always ready to ensure you have a memorable
         experience with us.

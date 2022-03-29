@@ -3,11 +3,8 @@
     <div class="container">
       <div class="flex py-24">
         <div class="w-2/4 text-3xl font-bold pr-16">
-          <p class="mb-4">
-            Adonai House, A11, Adeniyi Coker Street, Dideolu Estate, Oniru,
-            Victoria Island, Lagos.
-          </p>
-          <p class="mb-4">+234 809 311 1555</p>
+          <p class="mb-4">Lekky County Homes, Ikota, Lekki, Lagos</p>
+          <p class="mb-4">+234 8098551970 & +234 8181389018</p>
           <a href="mailto@info@rightstay.ng" class="color-green"
             >info@rightstay.ng</a
           >
@@ -21,7 +18,9 @@
               <nuxt-link to="/about-RightHome">About RightHome</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/terms-conditions">Term &amp; Conditions</nuxt-link>
+              <nuxt-link to="/terms-conditions"
+                >Term &amp; Conditions</nuxt-link
+              >
             </li>
             <li>
               <a href="https://rightsourceng.com/">Rightsource Website</a>

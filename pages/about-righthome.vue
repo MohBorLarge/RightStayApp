@@ -1,8 +1,6 @@
 <template>
   <div>
-    <hero-card
-      text="Find the perfect place to stay with your family in several locations"
-    />
+    <hero-card text="Find the perfect place to stay with your loved ones" />
     <about-us />
     <hr />
     <mission-stats />
