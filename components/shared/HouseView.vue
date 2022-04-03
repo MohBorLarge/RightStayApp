@@ -16,13 +16,13 @@
     </div>
 
     <div
-      class="flex justify-between mb-12 mx-12 sm:mx-0"
-      :class="`sm:grid-cols-${noOfCols}`"
+      class="block justify-between mb-12 mx-12 md:mx-0"
+      :class="`sm:flex`"
     >
       <div
         v-for="(item, index) in houses"
         :key="index"
-        class="houses bg-white p-4 rounded-lg w-1/3"
+        class="houses bg-white p-4 rounded-lg w-full md:w-1/3"
       >
         <div class="pb-6">
           <img
@@ -30,7 +30,7 @@
               item.houseImages ? item.houseImages[0].fields.file.url : null
             }`"
             :alt="item.houseImages ? item.houseImages[0].fields.title : null"
-            class="rounded-lg w-full h-60"
+            class="rounded-lg w-full h-80 md:h-60"
           />
         </div>
         <p class="text-4xl font-bold sm:text-2xl">{{ item.houseTitle }}</p>

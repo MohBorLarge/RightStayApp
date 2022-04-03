@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-3 gap-20 py-20">
+  <div class="grid grid-cols-3 gap-20 py-20 mx-12 md:mx-0">
     <div class="flex w-2/4">
       <div class="text-5xl mr-6">
         <h3>₦7.4M</h3>

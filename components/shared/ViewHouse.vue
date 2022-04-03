@@ -4,39 +4,20 @@
       <p class="text-5xl font-bold">{{ currentHouse.houseTitle }}</p>
       <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
     </div>
-    <div class="flex w-full">
-      <div class="images w-full">
-        <div class="flex mb-10">
-          <div class="mr-6 w-full">
+    <div class="w-full mb-14">
+      <div>
+        <VueSlickCarousel
+          v-if="currentHouse.houseImages && currentHouse.houseImages.length > 0"
+          v-bind="carouselSettings"
+        >
+          <div v-for="item in currentHouse.houseImages" :key="item">
             <img
-              :src="`https:${
-                currentHouse.houseImages
-                  ? currentHouse.houseImages[0].fields.file.url
-                  : null
-              }`"
-              :alt="
-                currentHouse.houseImages
-                  ? currentHouse.houseImages[0].fields.title
-                  : null
-              "
-              class="h-full rounded-md object-cover"
-              style="height: 610px; width: 100%"
+              :src="`https:${item.fields.file.url}`"
+              :alt="item.fields.title"
+              class="rounded-md object-cover cursor-pointer h-96 w-11/12"
             />
           </div>
-          <div class="w-3/12 grid grid-cols-1 gap-6">
-            <div
-              v-for="item in currentHouse.houseImages"
-              :key="item"
-              class="feat-images"
-            >
-              <img
-                :src="`https:${item.fields.file.url}`"
-                :alt="item.fields.title"
-                class="rounded-md object-cover cursor-pointer"
-              />
-            </div>
-          </div>
-        </div>
+        </VueSlickCarousel>
       </div>
     </div>
 
@@ -195,6 +176,10 @@
 
 <script>
 import { HardDriveIcon, SquareIcon } from 'vue-feather-icons'
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'ViewHouse',
@@ -202,6 +187,7 @@ export default {
   components: {
     HardDriveIcon,
     SquareIcon,
+    VueSlickCarousel,
   },
 
   props: {
@@ -211,6 +197,46 @@ export default {
       required: true,
     },
   },
+
+  data() {
+    return {
+      carouselSettings: {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      },
+    }
+  },
 }
 </script>
 
@@ -218,11 +244,5 @@ export default {
 form input {
   height: 40px;
   padding-left: 10px;
-}
-.feat-images:hover {
-  padding: 3px;
-  border: 2px solid gray;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
 }
 </style>
