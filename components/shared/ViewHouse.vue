@@ -87,7 +87,7 @@
         </div>
         <div>
           <form
-            action="https://formsubmit.co/info@RightStay.ng"
+            action="https://formsubmit.co/info@righthome.ng"
             method="POST"
             class="grid grid-cols-1 gap-4 my-12"
           >
@@ -148,6 +148,46 @@
             {{ item.content[0].value }}
           </p>
         </div>
+
+        <div v-if="currentHouse.houseId === '0001'" class="mt-8">
+          <div
+            class="flex justify-between mr-96 cursor-pointer mb-8 text-xl font-semibold"
+          >
+            <div>
+              <p class="ease">Pool Area</p>
+              <hr class="text-green-400 mt-2" style="border-top: 2px solid" />
+            </div>
+          </div>
+
+          <video
+            controls="controls"
+            style="height: 350px !important; width: 500px"
+          >
+            <source src="../../assets/images/pool-video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div v-if="currentHouse.houseId === '0001'" class="mt-16">
+          <div
+            class="flex justify-between mr-96 cursor-pointer mb-8 text-xl font-semibold"
+          >
+            <div>
+              <p class="ease">Lounge Area</p>
+              <hr class="text-green-400 mt-2" style="border-top: 2px solid" />
+            </div>
+          </div>
+
+          <video
+            controls="controls"
+            style="height: 350px !important; width: 500px"
+            muted
+          >
+            <source
+              src="../../assets/images/lounge-video.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </div>
     </div>
   </div>
@@ -183,6 +223,6 @@ form input {
   padding: 3px;
   border: 2px solid gray;
   border-radius: 8px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 </style>
