@@ -1,5 +1,6 @@
 <template>
   <div>
+    <sliding-phones />
     <hero-card text="Find the perfect place to stay with your loved ones" />
     <house-view :houses="houses" />
     <hr />
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import SlidingPhones from '@/components/homepage/SlidingPhones.vue'
 import HeroCard from '@/components/homepage/HeroCard.vue'
 import HouseView from '@/components/shared/HouseView.vue'
 import ReviewSection from '~/components/homepage/ReviewSection.vue'
@@ -16,6 +18,7 @@ import client from '~/plugins/contentful'
 export default {
   name: 'HomePage',
   components: {
+    SlidingPhones,
     HeroCard,
     HouseView,
     ReviewSection,
