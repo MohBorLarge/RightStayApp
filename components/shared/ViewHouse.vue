@@ -10,13 +10,13 @@
           v-if="currentHouse.houseImages && currentHouse.houseImages.length > 0"
           v-bind="carouselSettings"
         >
-          <div v-for="item in currentHouse.houseImages" :key="item">
+          <a v-for="item in currentHouse.houseImages" :key="item" :href="`https:${item.fields.file.url}`" target="_blank">
             <img
               :src="`https:${item.fields.file.url}`"
               :alt="item.fields.title"
               class="rounded-md object-cover cursor-pointer h-96 w-11/12"
             />
-          </div>
+          </a>
         </VueSlickCarousel>
       </div>
     </div>
@@ -128,6 +128,7 @@
           >
             {{ item.content[0].value }}
           </p>
+          <p>20% Discount for first time customers.</p>
         </div>
 
         <div v-if="currentHouse.houseId === '0001'" class="mt-8">
