@@ -5,16 +5,26 @@
       <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
     </div>
     <div class="w-full mb-14">
+      <img
+        v-if="currentFeaturedImage && currentFeaturedImage.fields"
+        :src="`https:${currentFeaturedImage.fields.file.url}`"
+        :alt="currentFeaturedImage.fields.title"
+        class="rounded-md object-cover cursor-pointer h-100 w-full mb-12"
+      />
       <div>
         <VueSlickCarousel
           v-if="currentHouse.houseImages && currentHouse.houseImages.length > 0"
           v-bind="carouselSettings"
         >
-          <a v-for="item in currentHouse.houseImages" :key="item" :href="`https:${item.fields.file.url}`" target="_blank">
+          <a
+            v-for="item in currentHouse.houseImages"
+            :key="item"
+            @click="setCurrentFeaturedImage(item)"
+          >
             <img
               :src="`https:${item.fields.file.url}`"
               :alt="item.fields.title"
-              class="rounded-md object-cover cursor-pointer h-100 w-full"
+              class="rounded-md object-cover cursor-pointer h-36 w-11/12"
             />
           </a>
         </VueSlickCarousel>
@@ -201,13 +211,14 @@ export default {
 
   data() {
     return {
+      currentFeaturedImage: {},
       carouselSettings: {
         dots: true,
         infinite: false,
         speed: 500,
         arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         initialSlide: 0,
         responsive: [
           {
@@ -237,6 +248,20 @@ export default {
         ],
       },
     }
+  },
+
+  watch: {
+    currentHouse(newVal) {
+      if (newVal && newVal.houseImages) {
+        this.currentFeaturedImage = newVal.houseImages[0]
+      }
+    },
+  },
+
+  methods: {
+    setCurrentFeaturedImage(item) {
+      this.currentFeaturedImage = item
+    },
   },
 }
 </script>
