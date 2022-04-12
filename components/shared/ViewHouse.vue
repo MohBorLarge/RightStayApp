@@ -14,7 +14,7 @@
             <img
               :src="`https:${item.fields.file.url}`"
               :alt="item.fields.title"
-              class="rounded-md object-cover cursor-pointer h-96 w-11/12"
+              class="rounded-md object-cover cursor-pointer h-100 w-full"
             />
           </a>
         </VueSlickCarousel>
@@ -206,8 +206,8 @@ export default {
         infinite: false,
         speed: 500,
         arrows: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
           {
@@ -245,5 +245,8 @@ export default {
 form input {
   height: 40px;
   padding-left: 10px;
+}
+.h-100 {
+  height: 36rem;
 }
 </style>
