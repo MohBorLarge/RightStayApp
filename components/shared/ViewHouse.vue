@@ -5,21 +5,26 @@
       <p>{{ currentHouse.houseAddress }}, {{ currentHouse.state }}</p>
     </div>
     <div class="w-full mb-14">
-      <img
+      <a
         v-if="currentFeaturedImage && currentFeaturedImage.fields"
-        :src="`https:${currentFeaturedImage.fields.file.url}`"
-        :alt="currentFeaturedImage.fields.title"
-        class="rounded-md object-cover cursor-pointer h-100 w-full mb-12"
-      />
+        :href="`https:${currentFeaturedImage.fields.file.url}`"
+        target="_blank"
+      >
+        <img
+          :src="`https:${currentFeaturedImage.fields.file.url}`"
+          :alt="currentFeaturedImage.fields.title"
+          class="rounded-md object-cover cursor-pointer h-100 w-full mb-12 animate-image"
+        />
+      </a>
       <div>
         <VueSlickCarousel
           v-if="currentHouse.houseImages && currentHouse.houseImages.length > 0"
           v-bind="carouselSettings"
         >
           <a
-            v-for="item in currentHouse.houseImages"
+            v-for="(item, index) in currentHouse.houseImages"
             :key="item"
-            @click="setCurrentFeaturedImage(item)"
+            @click="setCurrentFeaturedImage(index)"
           >
             <img
               :src="`https:${item.fields.file.url}`"
@@ -211,6 +216,7 @@ export default {
 
   data() {
     return {
+      imageIndex: 0,
       currentFeaturedImage: {},
       carouselSettings: {
         dots: true,
@@ -253,14 +259,26 @@ export default {
   watch: {
     currentHouse(newVal) {
       if (newVal && newVal.houseImages) {
-        this.currentFeaturedImage = newVal.houseImages[0]
+        this.currentFeaturedImage = newVal.houseImages[this.imageIndex]
       }
     },
   },
 
+  mounted() {
+    setInterval(() => {
+      if (this.imageIndex === this.currentHouse.houseImages.length - 1) {
+        this.imageIndex = 0
+      } else {
+        this.imageIndex++
+      }
+      this.setCurrentFeaturedImage(this.imageIndex)
+    }, 3000)
+  },
+
   methods: {
-    setCurrentFeaturedImage(item) {
-      this.currentFeaturedImage = item
+    setCurrentFeaturedImage(imageIndex) {
+      this.imageIndex = imageIndex
+      this.currentFeaturedImage = this.currentHouse.houseImages[this.imageIndex]
     },
   },
 }
