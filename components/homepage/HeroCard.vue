@@ -53,8 +53,8 @@ export default {
     },
     images: [
       'https://images.ctfassets.net/y0slm2s1ky9o/61b7Yc2V6jdNxYHUkF0ORK/6d785d9a0f87adc0dfd15491272da047/newhome4.jpeg',
-      'https://images.ctfassets.net/y0slm2s1ky9o/2jBntwmW1dh3xcH5m96eZh/022eb695a556002221fe92a3db496371/newhome7.jpeg',
       'https://images.ctfassets.net/y0slm2s1ky9o/4XFopUziaABw7OgMwBwCaB/c3f4088f1dcb07f1dfb7760ab9a47d89/home3.jpeg',
+      'https://images.ctfassets.net/y0slm2s1ky9o/2jBntwmW1dh3xcH5m96eZh/022eb695a556002221fe92a3db496371/newhome7.jpeg',
     ],
     transitions: [
       'fade',
