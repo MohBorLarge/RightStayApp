@@ -11,9 +11,10 @@ body {
 }
 
 .hero {
-  background-image: url('@/assets/images/newhome4.jpeg');
-  background-attachment: fixed;
-  height: 450px;
+  /* background-image: url('@/assets/images/newhome4.jpeg');
+  background-attachment: fixed; */
+  height: 0
+  
 }
 
 .hero .hero-overlay {
@@ -23,7 +24,9 @@ body {
     rgba(6, 88, 76, 0.9),
     rgba(255, 0, 0, 0)
   );
-  height: 450px;
+  position: absolute;
+  top: 1px;
+  height: 480px;
 }
 
 .filter-card {
