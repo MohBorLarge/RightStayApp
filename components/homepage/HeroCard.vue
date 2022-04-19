@@ -1,14 +1,26 @@
 <template>
-  <vue-flux
-    :options="options"
-    :images="images"
-    :transitions="transitions"
-    class="anime rounded-lg"
-  >
-    <template #preloader>
-      <flux-preloader />
-    </template>
-  </vue-flux>
+  <div class="relative">
+    <vue-flux
+      :options="options"
+      :images="images"
+      :transitions="transitions"
+      class="custom"
+    >
+      <template #preloader>
+        <flux-preloader />
+      </template>
+    </vue-flux>
+
+    <div class="hero bg-cover">
+      <div class="hero-overlay">
+        <div class="text-6xl text-white font-bold w-4/6 p-28">
+          <p style="letter-spacing: 1px">
+            {{ text }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -58,8 +70,8 @@ export default {
 }
 </script>
 <style scoped>
-.anime {
+.custom {
   height: 480px;
-  background-image: linear-gradient(90deg,rgba(6,88,76,.9),rgba(255,0,0,0));
+  /* background-image: linear-gradient(90deg,rgba(6,88,76,.9),rgba(255,0,0,0)); */
 }
 </style>
